@@ -1,4 +1,4 @@
-import moment from "moment";
+import dayjs from "dayjs";
 
 export const formatCurrency = (price, locales = "us-US", currency = "USD") => {
   return new Intl.NumberFormat(locales, {
@@ -19,7 +19,7 @@ export const formatDate = (
   inputFormat = "YYYY-MM-DD",
   outputFormat = "MMM DD, YYYY"
 ) => {
-  return moment(date, inputFormat).format(outputFormat);
+  return dayjs(date, inputFormat).format(outputFormat);
 };
 
 export const removeDash = (str) => {
