@@ -1,11 +1,8 @@
-import React from "react";
 import Link from "next/link";
-
+import React from "react";
 import Container from "../../other/Container";
-import Navigator from "../elements/Navigator";
-import FunctionItems from "../elements/FunctionItems";
 import MobileMenuOpener from "../elements/MobileMenuOpener";
-import SearchForm from "../elements/SearchForm";
+import Navigator from "../elements/Navigator";
 
 export default function MenuTwo({ containerFluid }) {
   return (
@@ -16,14 +13,15 @@ export default function MenuTwo({ containerFluid }) {
           <Link href={process.env.PUBLIC_URL + "/"}>
             <a className="menu-logo">
               <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+                src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
                 alt="MTDP logo"
+                height={50}
               />
             </a>
           </Link>
-          <SearchForm enterButton={<i className="icon_search" />} />
+          {/* <SearchForm enterButton={<i className="icon_search" />} /> */}
           <Navigator />
-          <FunctionItems />
+          {/* <FunctionItems /> */}
         </div>
       </Container>
     </div>

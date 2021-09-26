@@ -1,12 +1,13 @@
+@use "sass:math";
 @function remCal($size) {
   @if ($size == "auto" or $size == "100%") {
     @return $size;
   }
-  @return ($size/$rem-baseline) * 1rem;
+  @return math.div($size, $rem-baseline) * 1rem;
 }
 
 @function emCal($em, $size) {
-  @return ($size/$em) * 1em;
+  @return math.div($size, $em) * 1em;
 }
 
 @function setColor($color) {

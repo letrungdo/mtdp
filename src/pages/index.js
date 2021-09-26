@@ -7,7 +7,6 @@ import BannerOne from "../components/sections/banner/BannerOne";
 import DowOne from "../components/sections/dale-of-week/DowOne";
 import DowTwo from "../components/sections/dale-of-week/DowTwo";
 import HeroSliderOne from "../components/sections/hero-slider/HeroSliderOne";
-import HeroSliderTwo from "../components/sections/hero-slider/HeroSliderTwo";
 import IntroductionOne from "../components/sections/introduction/IntroductionOne";
 import ProductGrid from "../components/sections/product-thumb/ProductGrid";
 import ProductTab from "../components/sections/product-thumb/ProductTab";
@@ -71,9 +70,9 @@ export default function Home() {
   }, [currentProductTabsCategory.bestSellerProducts]);
 
   return (
-    <LayoutTwo title="Homepage">
+    <LayoutTwo title="Mai Thạch Đại Phát">
       <HeroSliderOne containerFluid data={heroslideData.one} />
-      <Container fluid>
+      {/* <Container fluid>
         <ProductTab
           data={featuredProducts}
           onTabChange={(val) =>
@@ -87,13 +86,13 @@ export default function Home() {
           productClassName="-borderless"
           productCol={{ xs: 12, sm: 8, lg: 6, xl: 4 }}
         />
-      </Container>
-      <Container fluid>
+      </Container> */}
+      {/* <Container fluid>
         <Benefits className="-bordered" containerFluid />
-      </Container>
-      <DowTwo countdownLast={100000000} />
+      </Container> */}
+      {/* <DowTwo countdownLast={100000000} /> */}
       <Container fluid>
-        <ProductTab
+        {/* <ProductTab
           data={bestSellerProducts}
           onTabChange={(val) =>
             setCurrentProductTabsCategory({
@@ -120,18 +119,11 @@ export default function Home() {
           headerTitle="Featured Products"
           productClassName="-borderless"
           productCol={{ xs: 12, sm: 8, lg: 6, xl: 4 }}
-        />
-        <IntroductionOne data={introductionOneData.one} />
+        /> */}
+        {/* <IntroductionOne data={introductionOneData.one} /> */}
         <DowOne data={dowOneData.one} countdownLast={100000000} />
-        <ProductGrid
-          data={products}
-          headerTitle="New Products"
-          productCol={{ xs: 24, sm: 12, md: 8, lg: 6 }}
-          productType="tiny"
-          fiveCol
-        />
       </Container>
-      <BannerOne data={bannerData.one} />
+      {/* <BannerOne data={bannerData.one} /> */}
     </LayoutTwo>
   );
 }

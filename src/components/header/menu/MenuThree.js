@@ -16,7 +16,7 @@ export default function MenuThree() {
           <Link href={process.env.PUBLIC_URL + "/"}>
             <a className="menu-logo">
               <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo-white.png"}
+                src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
                 alt="MTDP logo"
               />
             </a>

@@ -1,66 +1,80 @@
-import { Breadcrumb, Row, Col, Button } from "antd";
+import { Breadcrumb, Button, Col, Row } from "antd";
 import React from "react";
 import CountUp from "react-countup";
-
 import LayoutOne from "../../components/layout/LayoutOne";
 import Container from "../../components/other/Container";
 import SectionTitle from "../../components/other/SectionTitle";
 import IntroductionFive from "../../components/sections/introduction/IntroductionFive";
 import IntroductionSix from "../../components/sections/introduction/IntroductionSix";
 import PartnerOne from "../../components/sections/partners/PartnerOne";
-import introductionData from "../../data/sections/dale-of-week.json";
 import data from "../../data/pages/about.json";
+import introductionData from "../../data/sections/dale-of-week.json";
 
 function aboutUs() {
   return (
-    <LayoutOne title="About us">
+    <LayoutOne title="Giới thiệu">
       <Container>
         <Breadcrumb separator=">">
           <Breadcrumb.Item>
             <i className="fas fa-home" />
-            Home
+            Trang chủ
           </Breadcrumb.Item>
-          <Breadcrumb.Item>About us</Breadcrumb.Item>
+          <Breadcrumb.Item>Giới thiệu</Breadcrumb.Item>
         </Breadcrumb>
       </Container>
       <div className="about">
         <Container>
           <div className="about-story">
-            <Row gutter={40}>
-              <Col xs={24} sm={12}>
-                <div className="about-story__content">
-                  <SectionTitle title="The Story About Us" className="-left" />
-                  <p>
-                    Tyna Giang's integrated agro-forestry farming model is the
-                    first project in Vietnam to achieve the highest ranking in
-                    the "100 projects to combat climate change" by the Ministry
-                    of Environment, Energy and Sea. France organized in 2016 ...
-                  </p>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit. Neque porro quisquam est, sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem
-                  </p>
-                </div>
-              </Col>
-              <Col xs={24} sm={12}>
-                <div className="about-story__video">
-                  <img
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/images/pages/contact/video.png"
-                    }
-                    alt="introduction image"
-                  />
-                  <Button
-                    type="primary"
-                    shape="circle"
-                    icon={<i className="fas fa-play" />}
-                  />
-                </div>
-              </Col>
-            </Row>
+            <div className="about-story__content">
+              <SectionTitle title="Câu chuyện về chúng tôi" className="-left" />
+              <div className="about-story__video">
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/pages/contact/video.jpg"
+                  }
+                  alt="introduction image"
+                />
+                <Button
+                  type="primary"
+                  shape="circle"
+                  icon={<i className="fas fa-play" />}
+                />
+              </div>
+              <p>
+                Thành lập từ năm 2021, Công ty TNHH Xây Dựng Mai Thạch Đại Phát
+                luôn dẫn đầu trong lĩnh vực thiết kế và thi công xây dựng các
+                công trình dân dụng tại Tp. Hồ Chí Minh và các tỉnh lân cận
+                trong khu vực miền nam. Với đội ngũ thiết kế chuyên nghiệp gồm:
+                những Thạc Sĩ, Kiến Trúc Sư, Kỹ Sư, Chuyên Gia Nội Thất lành
+                nghề, chúng tôi luôn đảm bảo công tác tư vấn, thiết kế đạt chất
+                lượng qua các tiêu chí mang tính sáng tạo, hiện đại, chính xác
+                và tiết kiệm tối ưu chi phí hoàn thiện cho quyền lợi của Quý
+                Khách Hàng.
+              </p>
+              <p>
+                Trong lĩnh vực thi công xây dựng, với lực lượng nhân sự chuyên
+                nghiệp gồm 60 Kỹ Sư Giám Sát Công Trình đầy nhiệt huyết cùng hơn
+                1000 công nhân lành nghề được chia thành nhiều đội ngũ chuyên
+                môn như: Xí Nghiệp Xây Dựng, Đội Hoàn Thiện, Xưởng Nội Thất,
+                Xưởng Cơ Khí, Đội Điện Nươc, Đội Sơn Nước… Chúng tôi sẵn sàng
+                cam kết với quý khách hàng về các chuẩn mực trong quá trình hợp
+                tác và làm việc, mang đến một công trình hoàn hảo nhất với thông
+                điệp đồng hành xây nên hạnh phúc cùng quý khách hàng.
+              </p>
+              <p>
+                Với tiêu chí chuyên nghiệp trong công việc, tận tâm trong dịch
+                vụ và chu đáo khi hậu mãi, công ty TNHH Xây Dựng Mai Thạch Đại
+                Phát luôn là một nhà thiết kế và nhà thầu chính được tín nhiệm
+                hiện nay. Công ty TNHH Xây Dựng Mai Thạch Đại Phát đã thiết kế
+                và thi công tất cả các hạng mục của hơn 800 công trình các loại
+                như Biệt Thự, Cao ốc Văn Phòng, Siêu Thị, Khách Sạn, Nhà Phố…
+                Công ty TNHH Xây Dựng Mai Thạch Đại Phát luôn lớn mạnh trong
+                niềm tin của khách hàng để hoàn thành công trình của bạn vì
+                chúng tôi cam kết lấy chất lượng và uy tín làm mục tiêu hoạt
+                động.
+              </p>
+            </div>
           </div>
           <div className="about-statistical">
             <Row gutter={[30, 30]}>
@@ -68,10 +82,11 @@ function aboutUs() {
                 <Col xs={24} md={8}>
                   <div className="about-statistical__item">
                     <div className="about-statistical__item-icon">
-                      <img
+                      <i class={item.icon}></i>
+                      {/* <img
                         src={process.env.PUBLIC_URL + item.icon}
                         alt="Statistcal icon"
-                      />
+                      /> */}
                     </div>
                     <div className="about-statistical__item-data">
                       <CountUp start={0} end={item.number} delay={0}>
@@ -96,9 +111,9 @@ function aboutUs() {
           <IntroductionSix />
         </div>
 
-        <Container>
+        {/* <Container>
           <PartnerOne />
-        </Container>
+        </Container> */}
       </div>
     </LayoutOne>
   );

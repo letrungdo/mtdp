@@ -1,8 +1,7 @@
-import React from "react";
+import { Col, Row } from "antd";
 import classNames from "classnames";
+import React from "react";
 import Countdown, { zeroPad } from "react-countdown";
-import { Row, Col } from "antd";
-
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
 
@@ -12,10 +11,7 @@ const DownOneItem = React.memo(({ reverse, data }) => {
       className={`dow-one-content__item ${classNames({ "-reverse": reverse })}`}
     >
       <div className="dow-one-content__item-image">
-        <img
-          src={process.env.PUBLIC_URL + data.iconSrc}
-          alt="Dale of the week icon"
-        />
+        <i className={data.iconSrc} />
       </div>
       <div className="dow-one-content__item-content">
         <h5>{data.title}</h5>
@@ -29,7 +25,7 @@ function DowOne({ data, countdownLast }) {
   return (
     <div className="dow-one">
       <Container>
-        <SectionTitle title="Deal Of The Week" className="-center" />
+        <SectionTitle title="Tại sao chọn chúng tôi" className="-center" />
         <div className="dow-one-content">
           <Row align="center" gutter={15}>
             <Col md={12} lg={8}>
@@ -46,7 +42,7 @@ function DowOne({ data, countdownLast }) {
                 className="dow-one-image"
                 src={
                   process.env.PUBLIC_URL +
-                  "assets/images/sections/dale-of-week/one/img.png"
+                  "assets/images/sections/dale-of-week/one/img.jpg"
                 }
                 alt="Dale of the week image"
               />
@@ -63,7 +59,7 @@ function DowOne({ data, countdownLast }) {
           </Row>
         </div>
 
-        <Countdown
+        {/* <Countdown
           date={Date.now() + countdownLast}
           renderer={({ days, hours, minutes, seconds }) => {
             return (
@@ -84,7 +80,7 @@ function DowOne({ data, countdownLast }) {
               </div>
             );
           }}
-        />
+        /> */}
       </Container>
     </div>
   );

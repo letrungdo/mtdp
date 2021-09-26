@@ -1,22 +1,23 @@
 {
   "one": [
     {
-      "background": "/assets/images/hero-slider/one/bg-1.png",
-      "subTitle": "Fruit Fresh",
-      "title": "Orange Lemon",
-      "price": {
-        "main": "14",
-        "unit": "pakage"
-      }
+      "background": "/assets/images/hero-slider/one/bg-1.jpg",
+      "subTitle": "Đội ngũ nhân viên nhiều kinh nghiệm",
+      "title": "Đội ngũ nhân viên"
     },
     {
-      "background": "/assets/images/hero-slider/one/bg-2.png",
-      "subTitle": "Butter & Eggs",
-      "title": "Spice 100% Oganic",
-      "price": {
-        "main": "16",
-        "unit": "pakage"
-      }
+      "background": "/assets/images/hero-slider/one/bg-2.jpg",
+      "subTitle": "Thi công nhà phố đẹp, nhanh chóng và giá rẻ",
+      "title": "Thi công nhà phố"
+    },
+    {
+      "background": "/assets/images/hero-slider/one/bg-3.jpg"
+    },
+    {
+      "background": "/assets/images/hero-slider/one/bg-4.jpg"
+    },
+    {
+      "background": "/assets/images/hero-slider/one/bg-5.jpg"
     }
   ],
   "four": [

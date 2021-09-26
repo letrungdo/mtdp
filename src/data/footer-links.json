@@ -1,29 +1,23 @@
 [
   {
-    "title": "INFOMATION",
+    "title": "Thông tin",
     "items": [
-      { "title": "About us", "href": "/other/about-us" },
-      { "title": "Check out", "href": "/shop/checkout" },
-      { "title": "Contact", "href": "/other/contact-us" },
-      { "title": "Service", "href": "#" }
+      { "title": "Giới thiệu", "href": "/other/about-us" },
+      { "title": "Liên hệ", "href": "/other/contact-us" }
     ]
   },
   {
-    "title": "MY ACCOUNT",
+    "title": "Báo giá",
     "items": [
-      { "title": "My account", "href": "#" },
-      { "title": "Contact", "href": "/other/contact-us" },
-      { "title": "Shop Cart", "href": "/shop/cart" },
-      { "title": "Tracking Order", "href": "#" }
+      { "title": "Thiết kế kiến trúc", "href": "#" },
+      { "title": "XD phần thô", "href": "#" },
+      { "title": "XD phần hoàn thiện", "href": "#" }
     ]
   },
   {
-    "title": "QUICK SHOP",
+    "title": "Liên kết",
     "items": [
-      { "title": "About us", "href": "/other/about-us" },
-      { "title": "Check out", "href": "/shop/checkout" },
-      { "title": "Contact", "href": "/other/contact-us" },
-      { "title": "Service", "href": "#" }
+      { "title": "Dịch vụ bảo vệ", "href": "https://hoanggiasaigonbmc.com" }
     ]
   }
 ]

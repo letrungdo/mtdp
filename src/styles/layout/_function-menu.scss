@@ -47,7 +47,7 @@
         color: setColor(green);
         margin-right: emCal(16, 5);
       }
-      span {
+      a {
         @include typo($fsz: emCal(16, 22), $fw: 600);
       }
     }

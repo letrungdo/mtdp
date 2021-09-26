@@ -15,13 +15,13 @@ export default function MenuOne() {
           <Link href={process.env.PUBLIC_URL + "/"}>
             <a className="menu-logo">
               <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+                src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
                 alt="MTDP logo"
               />
             </a>
           </Link>
           <Navigator />
-          <FunctionItems />
+          {/* <FunctionItems /> */}
         </div>
       </Container>
     </div>

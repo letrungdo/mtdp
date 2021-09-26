@@ -13,24 +13,25 @@ const IntroductionFive = ({ data }) => {
               <img
                 src={
                   process.env.PUBLIC_URL +
-                  "/assets/images/sections/introduction/five/1.png"
+                  "/assets/images/sections/introduction/five/1.jpg"
                 }
-                alt="Dale of the week icon"
+                alt="Xây dựng Mai Thạch Đại Phát"
               />
             </div>
           </Col>
           <Col sm={12} md={16}>
             <div className="introduction-five-benefits">
-              <SectionTitle title="Why choose us" className="-left" />
+              <SectionTitle title="Tại sao chọn chúng tôi" className="-left" />
               <Row gutter={[30, 30]}>
                 {data.map((item) => (
                   <Col md={12}>
                     <div className="introduction-five-benefits__item">
                       <div className="introduction-five-benefits__item-image">
-                        <img
+                        {/* <img
                           src={process.env.PUBLIC_URL + item.iconSrc}
-                          alt="Dale of the week icon"
-                        />
+                          alt="icon"
+                        /> */}
+                        <i class={item.iconSrc} />
                       </div>
                       <div className="introduction-five-benefits__item-content">
                         <h5>{item.title}</h5>

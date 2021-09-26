@@ -1,12 +1,9 @@
-import React from "react";
-import { Row, Col } from "antd";
+import { Col, Row } from "antd";
 import classNames from "classnames";
-
+import React from "react";
 import Container from "../other/Container";
-import footerLinks from "../../data/footer-links.json";
-import FooterQuickLinks from "./elements/FooterQuickLinks";
 import FooterInfomation from "./elements/FooterInfomation";
-import FooterSubcribeInput from "./elements/FooterSubcribeInput";
+import FooterQuickLinks from "./elements/FooterQuickLinks";
 
 function Footer({ containerFluid, className }) {
   return (
@@ -23,31 +20,15 @@ function Footer({ containerFluid, className }) {
           </Row>
         </Container>
       </div>
-      <div className="footer-subcribe">
-        <Container>
-          <Row align="center">
-            <Col xs={24} md={14}>
-              <div className="footer-subcribe__content">
-                <h5>Join Our Newsletter Now</h5>
-                <p>
-                  Get E-mail updates about our latest shop and special offers.
-                </p>
-              </div>
-            </Col>
-            <Col xs={24} md={10}>
-              <FooterSubcribeInput url="https://jster.us7.list-manage.com/subscribe/post?u=ed40c0084a0c5ba31b3365d65&id=ec6f32bf5e" />
-            </Col>
-          </Row>
-        </Container>
-      </div>
       <div className="footer-bottom">
         <Container>
           <div className="footer-bottom__wrapper">
-            <p>Copyright © 2021 letrungdo.com - All Rights Reserved.</p>
-            <img
-              src={process.env.PUBLIC_URL + "/assets/images/footer/payment.png"}
-              alt="Payment methods"
-            />
+            <p>
+              Copyright © 2021{" "}
+              <a href="https://letrungdo.com" target="_blank">
+                letrungdo.com
+              </a>
+            </p>
           </div>
         </Container>
       </div>

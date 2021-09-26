@@ -17,7 +17,7 @@ class MyDocument extends Document {
             name="description"
             content="MTDP - Mai Thạch Đại Phát"
           />
-          <link rel="icon" href="/fav.png" />
+          <link rel="icon" href="/favicon.png" />
           <link
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
             rel="stylesheet"

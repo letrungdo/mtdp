@@ -12,7 +12,7 @@
       margin-bottom: emCal(16, 15);
       li {
         @include typo(
-          $lh: emCal(16, 36),
+          $lh: emCal(16, 30),
           $color: setShadeColor(medium),
           $fw: 500
         );

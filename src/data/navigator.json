@@ -1,6 +1,6 @@
 {
   "HOME": {
-    "title": "Home",
+    "title": "Trang chủ",
     "href": "/"
   },
   "SHOP": {
@@ -46,13 +46,17 @@
     ]
   },
   "PAGES": {
-    "title": "Pages",
+    "title": "Báo giá",
     "href": "#",
     "subMenu": [
-      { "title": "FAQ", "href": "/other/faq" },
-      { "title": "Coming Soon", "href": "/other/coming-soon" },
-      { "title": "Liên hệ", "href": "/other/contact-us" }
+      { "title": "Thiết kế kiến trúc", "href": "#" },
+      { "title": "XD phần thô", "href": "#" },
+      { "title": "XD phần hoàn thiện", "href": "#" }
     ]
+  },
+  "CONTACT": {
+    "title": "Liên hệ",
+    "href": "/other/contact-us"
   },
   "ABOUT": {
     "title": "Giới thiệu",

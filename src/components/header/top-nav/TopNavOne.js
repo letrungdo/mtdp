@@ -1,8 +1,9 @@
-import React from "react";
-import Container from "../../other/Container";
-import SocialIcons from "../../other/SocialIcons";
 import { Select } from "antd";
 import Link from "next/link";
+import React from "react";
+import companyInfo from "../../../data/company-info.json";
+import Container from "../../other/Container";
+import SocialIcons from "../../other/SocialIcons";
 
 const flagData = [
   { name: "english", image: "/assets/images/header/flag-usa.png" },
@@ -20,11 +21,11 @@ export default function TopNavOne({ containerFluid }) {
             <ul>
               <li>
                 <i className="fas fa-envelope" />
-                info.deercreative@gmail.com
+                <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
               </li>
               <li>
                 <i className="fas fa-phone-alt" />
-                +65 11.188.888
+                <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
               </li>
             </ul>
           </div>
@@ -32,7 +33,7 @@ export default function TopNavOne({ containerFluid }) {
             <div className="top-nav-one-right__item">
               <SocialIcons />
             </div>
-            <div className="top-nav-one-right__item">
+            {/* <div className="top-nav-one-right__item">
               <Select defaultValue="english" width={125} bordered={false}>
                 {flagData.map((item, index) => (
                   <Option key={index} value={item.name}>
@@ -51,15 +52,15 @@ export default function TopNavOne({ containerFluid }) {
                   </Option>
                 ))}
               </Select>
-            </div>
-            <div className="top-nav-one-right__item">
+            </div> */}
+            {/* <div className="top-nav-one-right__item">
               <Link href={process.env.PUBLIC_URL + "/auth/login"}>
                 <a>
                   <i className="fas fa-user" />
                   Login
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

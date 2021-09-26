@@ -62,6 +62,11 @@ function MobileNavigator() {
             </Menu.Item>
           ))}
         </SubMenu>
+        <Menu.Item key="contact">
+          <Link href={process.env.PUBLIC_URL + navigatorData.CONTACT.href}>
+            <a>{navigatorData.CONTACT.title}</a>
+          </Link>
+        </Menu.Item>
         <Menu.Item key="about">
           <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
             <a>{navigatorData.ABOUT.title}</a>

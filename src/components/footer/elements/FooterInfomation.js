@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "next/link";
-
+import React from "react";
+import companyInfo from "../../../data/company-info.json";
 import SocialIcons from "../../other/SocialIcons";
 
 export default function FooterInfomation() {
@@ -9,15 +9,19 @@ export default function FooterInfomation() {
       <Link href={process.env.PUBLIC_URL + "/"}>
         <a className="footer-info__logo">
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+            src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
             alt="MTDP Logo"
           />
         </a>
       </Link>
       <ul>
-        <li>Address: 60-49 Road 11378 New York</li>
-        <li>Phone: +65 11.188.888</li>
-        <li>Email: info.deercreative@gmail.com</li>
+        <li>Địa chỉ: 2295/84 Huỳnh Tấn Phát Thị Trấn Nhà Bè, H. Nhà Bè, HCM</li>
+        <li>
+          Điện thoại: <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
+        </li>
+        <li>
+          Email: <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
+        </li>
       </ul>
       <SocialIcons type="primary" shape="circle" className="-btn-light" />
     </div>

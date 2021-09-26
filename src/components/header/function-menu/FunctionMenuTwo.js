@@ -1,8 +1,8 @@
+import { Col, Row } from "antd";
 import React from "react";
-
+import companyInfo from "../../../data/company-info.json";
 import Container from "../../other/Container";
 import CategoryColappse from "../elements/CategoryColappse";
-import { Row, Col } from "antd";
 import SearchForm from "../elements/SearchForm";
 
 function FunctionMenuTwo({ activeCollapse }) {
@@ -24,7 +24,7 @@ function FunctionMenuTwo({ activeCollapse }) {
             <Col xs={24} md={{ span: 2, order: 3 }} lg={6}>
               <div className="function-menu-contact">
                 <i className="fas fa-phone-alt" />
-                <span>+65 11.188.888</span>
+                <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
               </div>
             </Col>
           </Row>

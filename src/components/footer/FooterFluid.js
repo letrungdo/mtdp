@@ -1,12 +1,8 @@
+import { Col, Row } from "antd";
 import React from "react";
-import { Row, Col } from "antd";
-
 import Container from "../other/Container";
-
-import footerLinks from "../../data/footer-links.json";
-import FooterQuickLinks from "./elements/FooterQuickLinks";
 import FooterInfomation from "./elements/FooterInfomation";
-import FooterSubcribeInput from "./elements/FooterSubcribeInput";
+import FooterQuickLinks from "./elements/FooterQuickLinks";
 
 function FooterFluid() {
   return (
@@ -14,22 +10,12 @@ function FooterFluid() {
       <div className="footer-top">
         <Container fluid>
           <Row gutter={15}>
-            <Col xs={24} md={9} lg={6}>
+            <Col xs={24} md={9} lg={10}>
               <FooterInfomation />
             </Col>
-            <Col xs={24} md={15} lg={13}>
+            <Col xs={0} md={1} lg={2} />
+            <Col xs={24} md={14} lg={12}>
               <FooterQuickLinks colSize={{ span: 8 }} />
-            </Col>
-            <Col lg={5}>
-              <div className="footer-subcribe">
-                <div className="footer-subcribe__content">
-                  <h5>Join Our Newsletter Now</h5>
-                  <p>
-                    Get E-mail updates about our latest shop and special offers.
-                  </p>
-                </div>
-                <FooterSubcribeInput url="https://jster.us7.list-manage.com/subscribe/post?u=ed40c0084a0c5ba31b3365d65&id=ec6f32bf5e" />
-              </div>
             </Col>
           </Row>
         </Container>
@@ -37,11 +23,12 @@ function FooterFluid() {
       <div className="footer-bottom">
         <Container fluid>
           <div className="footer-bottom__wrapper">
-            <p>Copyright © 2021 letrungdo.com - All Rights Reserved.</p>
-            <img
-              src={process.env.PUBLIC_URL + "/assets/images/footer/payment.png"}
-              alt="Payment methods"
-            />
+            <p>
+              Copyright © 2021{" "}
+              <a href="https://letrungdo.com" target="_blank">
+                letrungdo.com
+              </a>
+            </p>
           </div>
         </Container>
       </div>

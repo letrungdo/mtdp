@@ -13,7 +13,7 @@
       i {
         font-size: emCal(16, 40);
         color: setColor(green);
-        margin-bottom: emCal(40, 35);
+        margin-bottom: 1rem;
       }
       p {
         @include typo($fsz: emCal(16, 18), $lh: emCal(18, 36));

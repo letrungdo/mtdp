@@ -29,19 +29,19 @@ const CustomForm = React.memo(({ status, message, onValidated }) => {
           rules={[
             {
               type: "email",
-              message: "The input is not valid E-mail!",
+              message: "Đầu vào không hợp lệ Email!",
             },
             {
               required: true,
-              message: "Please input your E-mail!",
+              message: "Vui lòng nhập email của bạn!",
             },
           ]}
         >
-          <Input placeholder="Enter your email" />
+          <Input placeholder="Nhập email của bạn" />
         </Form.Item>
         <Form.Item noStyle={true}>
           <Button type="link" htmlType="submit">
-            SUBSCRIBE
+            ĐĂNG KÝ
           </Button>
         </Form.Item>
       </Form>

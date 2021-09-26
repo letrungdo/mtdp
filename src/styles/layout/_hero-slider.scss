@@ -44,6 +44,9 @@
     }
     .hero-slider-subitems {
       margin: 1.4rem 0 2.5rem 0;
+      a {
+        max-height: 220px;
+      }
     }
   }
   &.-single {
@@ -61,7 +64,7 @@
   }
   &-content {
     h5 {
-      @include typo($fsz: emCal(16, 14), $color: setColor(green), $fw: 600);
+      @include typo($fsz: emCal(16, 16), $color: setColor(green), $fw: 600);
       letter-spacing: emCal(14, 2.8);
       margin-bottom: emCal(14, 10);
     }
@@ -89,16 +92,13 @@
   &.-style-one {
     .hero-slider-content-wrapper {
       padding: emCal(16, 100) 0;
+      min-height: 40rem;
       .hero-slider-content {
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
         @include mq(md) {
           margin-bottom: emCal(14, 50);
-        }
-      }
-      .hero-slider-image {
-        background: {
-          image: url("/assets/images/hero-slider/one/deco.png");
-          size: contain;
-          repeat: no-repeat;
         }
       }
     }

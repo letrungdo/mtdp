@@ -1,9 +1,10 @@
 .dow-one {
   margin-bottom: $section-spacing;
   .section-title {
-    margin-bottom: emCal(16, 100);
+    margin-bottom: emCal(16, 50);
   }
   &-image {
+    border-radius: 10px;
     @include imgCenter($type: contain);
     @include mq(md) {
       display: none;
@@ -26,8 +27,6 @@
         }
       }
       &-image {
-        border-radius: 999px;
-        background-color: setColor(light);
         height: emCal(16, 55);
         width: emCal(16, 55);
         display: flex;

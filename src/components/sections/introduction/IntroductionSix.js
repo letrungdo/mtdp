@@ -6,24 +6,24 @@ import { Col, Row } from "antd";
 
 const data = [
   {
-    name: "Katie Harrison",
-    job: "Barber",
-    image: "/assets/images/sections/introduction/six/1.png",
+    name: "Nguyễn Ngân Thạch",
+    job: "Tổng giám đốc",
+    image: "/assets/images/sections/introduction/six/1.jpg",
   },
   {
-    name: "John Harrison",
-    job: "Sercurity",
+    name: "Nguyễn Nhật Giang",
+    job: "Giám đốc điều hành",
     image: "/assets/images/sections/introduction/six/2.png",
   },
   {
-    name: "Katie Perry",
-    job: "Worker",
-    image: "/assets/images/sections/introduction/six/3.png",
+    name: "Lee Ji Eun",
+    job: "Giám đốc thiết kế",
+    image: "/assets/images/sections/introduction/six/3.jpg",
   },
   {
-    name: "Max Rashford",
-    job: "Barber",
-    image: "/assets/images/sections/introduction/six/1.png",
+    name: "Lý Lệ Hà",
+    job: "Giám đốc thi công",
+    image: "/assets/images/sections/introduction/six/4.jpg",
   },
 ];
 
@@ -31,7 +31,7 @@ const IntroductionSix = () => {
   return (
     <div className="introduction-six">
       <Container>
-        <SectionTitle title="We are farmer" className="-center" />
+        <SectionTitle title="Ban lãnh đạo" className="-center" />
         <div className="introduction-six-content">
           <Row gutter={[30, 30]}>
             {data.map((item) => (

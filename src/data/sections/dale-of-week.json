@@ -1,24 +1,24 @@
 {
   "one": [
     {
-      "title": "Eat Healthier",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/dale-of-week/one/1.png"
+      "title": "60 Đội thợ có sẵn",
+      "description": "Thi công ngay sau giãn cách",
+      "iconSrc": "fal fa-users-class fa-3x"
     },
     {
-      "title": "We Have Brands",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/dale-of-week/one/2.png"
+      "title": "100% Nhân sự đã được tiêm vaccine",
+      "description": "Nhân sự tiếp xúc trực tiếp với khách hàng đã được tiêm 2 mũi vaccine",
+      "iconSrc": "fal fa-syringe fa-3x"
     },
     {
-      "title": "Fresh And Clean Products",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/dale-of-week/one/3.png"
+      "title": "Đảm bảo thi công không gián đoạn",
+      "description": "Nguồn nhân lực dồi dào",
+      "iconSrc": "fal fa-balance-scale fa-3x"
     },
     {
-      "title": "Modern Process",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/dale-of-week/one/4.png"
+      "title": "Cam kết dịch vụ",
+      "description": "Cam kết thi công đúng 100% những hạn mục đã nêu trong hợp đồng",
+      "iconSrc": "fal fa-badge-check fa-3x"
     }
   ]
 }

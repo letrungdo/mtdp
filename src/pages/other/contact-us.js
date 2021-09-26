@@ -1,9 +1,9 @@
-import { Breadcrumb, Row, Col, Form, Input, Button } from "antd";
+import { Breadcrumb, Button, Col, Form, Input, Row } from "antd";
 import React from "react";
-
 import LayoutOne from "../../components/layout/LayoutOne";
 import Container from "../../components/other/Container";
 import SectionTitle from "../../components/other/SectionTitle";
+import companyInfo from "../../data/company-info.json";
 
 function contactUs() {
   const onFinish = (values) => {
@@ -14,19 +14,19 @@ function contactUs() {
     console.log("Failed:", errorInfo);
   };
   return (
-    <LayoutOne title="Contact us">
+    <LayoutOne title="Liên hệ">
       <Container>
         <Breadcrumb separator=">">
           <Breadcrumb.Item>
             <i className="fas fa-home" />
-            Home
+            Trang chủ
           </Breadcrumb.Item>
-          <Breadcrumb.Item>Contact us</Breadcrumb.Item>
+          <Breadcrumb.Item>Liên hệ</Breadcrumb.Item>
         </Breadcrumb>
         <div className="contact">
           <div className="contact-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61340.5926218679!2d105.81059401774723!3d21.0067991436028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1601782776693!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.621640518476!2d106.74180031526474!3d10.686448063769113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe93fd577e906732e!2zQ8O0bmcgVHkgVG5oaCBE4buLY2ggVuG7pSBC4bqjbyBW4buHIEhvw6BuZyBHaWEgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1632655510138!5m2!1svi!2s"
               width="100%"
               height="600"
               frameborder="0"
@@ -41,18 +41,21 @@ function contactUs() {
               <Col xs={24} md={8}>
                 <div className="contact-methods-item">
                   <i className="fal fa-map-marker-alt" />
-                  <p>60-49 Road 11378</p>
-                  <p>New York</p>
+                  <p>{companyInfo.address}</p>
                 </div>
               </Col>
               <Col xs={24} md={8}>
                 <div className="contact-methods-item">
                   <i className="fal fa-envelope" />
                   <p>
-                    <span>Phone:</span> 0123456789
+                    <span>Điện thoại:</span>{" "}
+                    <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
                   </p>
                   <p>
-                    <span>Mail:</span> info.deercreative@gmail.com
+                    <span>Email:</span>{" "}
+                    <a href={`mailto:${companyInfo.email}`}>
+                      {companyInfo.email}
+                    </a>
                   </p>
                 </div>
               </Col>
@@ -60,10 +63,10 @@ function contactUs() {
                 <div className="contact-methods-item">
                   <i className="fal fa-clock" />
                   <p>
-                    <span>Week Days:</span> 10:00 – 22:00
+                    <span>Thứ 2 - Thứ 7:</span> 8:00 – 22:00
                   </p>
                   <p>
-                    <span>Sunday:</span> Close
+                    <span>Chủ nhật:</span> 8:00 - 17:00
                   </p>
                 </div>
               </Col>
@@ -73,10 +76,10 @@ function contactUs() {
             <div className="contact-form__title">
               <SectionTitle
                 hideDecoration
-                title="Leave Message"
+                title="Để lại tin nhắn"
                 className="-center"
               />
-              <p>Our staff will call back later and answer your questions.</p>
+              <p>Nhân viên của chúng tôi sẽ gọi lại sau và giải đáp các thắc mắc của bạn.</p>
             </div>
             <Form
               name="review"
@@ -88,17 +91,17 @@ function contactUs() {
                   <Form.Item
                     name="name"
                     rules={[
-                      { required: true, message: "Please input your name!" },
+                      { required: true, message: "Vui lòng nhập tên của bạn!" },
                     ]}
                   >
-                    <Input placeholder="Name" />
+                    <Input placeholder="Tên" />
                   </Form.Item>
                 </Col>
                 <Col xs={24} md={12}>
                   <Form.Item
                     name="email"
                     rules={[
-                      { required: true, message: "Please input your email!" },
+                      { required: true, message: "Vui lòng nhập email của bạn!" },
                     ]}
                   >
                     <Input placeholder="Email" />
@@ -106,13 +109,13 @@ function contactUs() {
                 </Col>
                 <Col span={24}>
                   <Form.Item name="message">
-                    <Input.TextArea placeholder="Message" />
+                    <Input.TextArea placeholder="Tin nhắn" />
                   </Form.Item>
                 </Col>
                 <Col>
                   <Form.Item>
                     <Button type="primary" htmlType="submit" shape="round">
-                      Send Message
+                      Gửi
                     </Button>
                   </Form.Item>
                 </Col>
