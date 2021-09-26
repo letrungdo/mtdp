@@ -51,11 +51,11 @@
     "subMenu": [
       { "title": "FAQ", "href": "/other/faq" },
       { "title": "Coming Soon", "href": "/other/coming-soon" },
-      { "title": "Contact Us", "href": "/other/contact-us" }
+      { "title": "Liên hệ", "href": "/other/contact-us" }
     ]
   },
   "ABOUT": {
-    "title": "Liên hệ",
+    "title": "Giới thiệu",
     "href": "/other/about-us"
   }
 }

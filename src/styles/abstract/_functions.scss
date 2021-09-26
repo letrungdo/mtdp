@@ -30,6 +30,6 @@
   @if map-has-key($font-weight, $weight) {
     @return map-get($font-weight, $weight);
   } @else {
-    @return "CeraPro Regular";
+    @return "HelveticaNeue Regular";
   }
 }

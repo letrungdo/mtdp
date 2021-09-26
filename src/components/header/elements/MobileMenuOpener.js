@@ -17,7 +17,7 @@ function MobileMenuOpener() {
         <i className="fas fa-bars" />
       </a>
       <Drawer
-        title="Close"
+        title=""
         placement="right"
         closable={true}
         onClose={onCloseDrawer}

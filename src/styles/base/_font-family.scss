@@ -1,39 +1,24 @@
 @font-face {
-  font-family: "CeraPro Light";
-  src: url("/assets/fonts/CeraPro-Light.eot");
-  src: url("/assets/fonts/CeraPro-Light.eot") format("embedded-opentype"),
-    url("/assets/fonts/CeraPro-Light.woff") format("woff"),
-    url("/assets/fonts/CeraPro-Light.ttf") format("truetype");
+  font-family: "HelveticaNeue Light";
+  src: local("HelveticaNeue-Light"),
+    url("/assets/fonts/HelveticaNeue-Light.otf") format("opentype");
+  font-display: swap;
 }
-
 @font-face {
-  font-family: "CeraPro Medium";
-  src: url("/assets/fonts/CeraPro-Medium.eot");
-  src: url("/assets/fonts/CeraPro-Medium.eot") format("embedded-opentype"),
-    url("/assets/fonts/CeraPro-Medium.woff") format("woff"),
-    url("/assets/fonts/CeraPro-Medium.ttf") format("truetype");
+  font-family: "HelveticaNeue Medium";
+  src: local("HelveticaNeue-Medium"),
+    url("/assets/fonts/HelveticaNeue-Medium.otf") format("opentype");
+  font-display: swap;
 }
-
 @font-face {
-  font-family: "CeraPro Regular";
-  src: url("/assets/fonts/CeraPro-Regular.eot");
-  src: url("/assets/fonts/CeraPro-Regular.eot") format("embedded-opentype"),
-    url("/assets/fonts/CeraPro-Regular.woff") format("woff"),
-    url("/assets/fonts/CeraPro-Regular.ttf") format("truetype");
+  font-family: "HelveticaNeue Regular";
+  src: local("HelveticaNeue-Regular"),
+    url("/assets/fonts/HelveticaNeue-Regular.otf") format("opentype");
+  font-display: swap;
 }
-
 @font-face {
-  font-family: "CeraPro Bold";
-  src: url("/assets/fonts/CeraPro-Bold.eot");
-  src: url("/assets/fonts/CeraPro-Bold.eot") format("embedded-opentype"),
-    url("/assets/fonts/CeraPro-Bold.woff") format("woff"),
-    url("/assets/fonts/CeraPro-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "CeraPro Black";
-  src: url("/assets/fonts/CeraPro-Black.eot");
-  src: url("/assets/fonts/CeraPro-Black.eot") format("embedded-opentype"),
-    url("/assets/fonts/CeraPro-Black.woff") format("woff"),
-    url("/assets/fonts/CeraPro-Black.ttf") format("truetype");
+  font-family: "HelveticaNeue Bold";
+  src: local("HelveticaNeue-Bold"),
+    url("/assets/fonts/HelveticaNeue-Bold.otf") format("opentype");
+  font-display: swap;
 }

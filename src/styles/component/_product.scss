@@ -108,7 +108,7 @@
   }
   &-type {
     // @include font-bold(12px, setColor(green), 1);
-    @include typo($fsz: emCal(16, 12), $color: setColor(green), $fw: 700);
+    @include typo($fsz: emCal(16, 12), $color: setColor(green), $fw: 600);
     text-transform: uppercase;
     letter-spacing: 2.4px;
     margin-bottom: 10px;
