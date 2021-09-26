@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import { Menu } from "antd";
-
-import navigatorData from "../../../data/navigator.json";
 import Link from "next/link";
+import React, { useState } from "react";
+import navigatorData from "../../../data/navigator.json";
 
 function Navigator() {
   const { SubMenu } = Menu;
@@ -13,11 +12,11 @@ function Navigator() {
   };
   return (
     <ul className="navigation">
-      <li className="navigation-item -toggleable">
+      <li className="navigation-item">
         <Link href={navigatorData.HOME.href}>
           <a className="navigation-item__title">{navigatorData.HOME.title}</a>
         </Link>
-        <ul className="navigation-item__submenu">
+        {/* <ul className="navigation-item__submenu">
           {navigatorData.HOME.subMenu.map((item, index) => (
             <li key={index}>
               <Link href={process.env.PUBLIC_URL + item.href}>
@@ -25,9 +24,9 @@ function Navigator() {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
-      <li className="navigation-item -toggleable">
+      {/* <li className="navigation-item -toggleable">
         <Link href={process.env.PUBLIC_URL + navigatorData.SHOP.href}>
           <a className="navigation-item__title">{navigatorData.SHOP.title}</a>
         </Link>
@@ -63,7 +62,7 @@ function Navigator() {
             ))}
           </div>
         </ul>
-      </li>
+      </li> */}
       <li className="navigation-item -toggleable">
         <Link href={process.env.PUBLIC_URL + navigatorData.BLOG.href}>
           <a className="navigation-item__title">{navigatorData.BLOG.title}</a>

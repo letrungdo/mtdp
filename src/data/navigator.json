@@ -1,14 +1,7 @@
 {
   "HOME": {
     "title": "Home",
-    "href": "#",
-    "subMenu": [
-      { "title": "Homepage 1", "href": "/" },
-      { "title": "Homepage 2", "href": "/homepages/homepage2" },
-      { "title": "Homepage 3", "href": "/homepages/homepage3" },
-      { "title": "Homepage 4", "href": "/homepages/homepage4" },
-      { "title": "Homepage 5", "href": "/homepages/homepage5" }
-    ]
+    "href": "/"
   },
   "SHOP": {
     "title": "Shop",
@@ -56,15 +49,13 @@
     "title": "Pages",
     "href": "#",
     "subMenu": [
-      { "title": "Login", "href": "/auth/login" },
-      { "title": "Register", "href": "/auth/register" },
       { "title": "FAQ", "href": "/other/faq" },
       { "title": "Coming Soon", "href": "/other/coming-soon" },
       { "title": "Contact Us", "href": "/other/contact-us" }
     ]
   },
   "ABOUT": {
-    "title": "About us",
+    "title": "Liên hệ",
     "href": "/other/about-us"
   }
 }

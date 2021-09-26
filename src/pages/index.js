@@ -1,74 +1,137 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-import * as shopActions from "../redux/actions/shopActions";
-import LayoutOne from "../components/layout/LayoutOne";
-import HeroSliderOne from "../components/sections/hero-slider/HeroSliderOne";
-import heroslideOneData from "../data/sections/hero-slider.json";
+import LayoutTwo from "../components/layout/LayoutTwo";
 import Benefits from "../components/other/Benefits";
-import CategoriesOne from "../components/sections/categories/CategoriesOne";
-import categoriesOneData from "../data/sections/categories.json";
+import Container from "../components/other/Container";
+import BannerOne from "../components/sections/banner/BannerOne";
+import DowOne from "../components/sections/dale-of-week/DowOne";
+import DowTwo from "../components/sections/dale-of-week/DowTwo";
+import HeroSliderOne from "../components/sections/hero-slider/HeroSliderOne";
+import HeroSliderTwo from "../components/sections/hero-slider/HeroSliderTwo";
+import IntroductionOne from "../components/sections/introduction/IntroductionOne";
+import ProductGrid from "../components/sections/product-thumb/ProductGrid";
 import ProductTab from "../components/sections/product-thumb/ProductTab";
 import categories from "../data/categories.json";
-import IntroductionOne from "../components/sections/introduction/IntroductionOne";
-import introductionOneData from "../data/sections/introduction.json";
-import DowOne from "../components/sections/dale-of-week/DowOne";
+import bannerData from "../data/sections/banner.json";
 import dowOneData from "../data/sections/dale-of-week.json";
-import PartnerOne from "../components/sections/partners/PartnerOne";
-import Container from "../components/other/Container";
+import heroslideData from "../data/sections/hero-slider.json";
+import introductionOneData from "../data/sections/introduction.json";
+import * as shopActions from "../redux/actions/shopActions";
 
 export default function Home() {
   const dispatch = useDispatch();
   const [currentProductTabsCategory, setCurrentProductTabsCategory] = useState({
-    daleProducts: "",
+    featuredProducts: "",
+    saleProducts: "",
+    bestSellerProducts: "",
   });
-  const { fetchDaleProductsRequest } = shopActions;
   const shopState = useSelector((state) => state.shopReducer);
-  const { daleProducts } = shopState;
+  const {
+    products,
+    saleProducts,
+    featuredProducts,
+    bestSellerProducts,
+    daleProducts,
+  } = shopState;
+  const {
+    fetchSaleProductsRequest,
+    fetchFeaturedProductsRequest,
+    fetchBestSellerProductsRequest,
+    fetchProductsRequest,
+  } = shopActions;
   useEffect(() => {
-    dispatch(fetchDaleProductsRequest({ limit: 8 }));
+    dispatch(fetchProductsRequest({ limit: 10, sort: {} }));
+    dispatch(fetchFeaturedProductsRequest({ limit: 12 }));
+    dispatch(fetchSaleProductsRequest({ limit: 6 }));
+    dispatch(fetchBestSellerProductsRequest({ limit: 6 }));
   }, []);
   useEffect(() => {
     dispatch(
-      fetchDaleProductsRequest({
-        limit: 8,
-        category: currentProductTabsCategory.daleProducts,
+      fetchFeaturedProductsRequest({
+        limit: 12,
+        category: currentProductTabsCategory.featuredProducts,
       })
     );
-  }, [currentProductTabsCategory.daleProducts]);
+  }, [currentProductTabsCategory.featuredProducts]);
+  useEffect(() => {
+    dispatch(
+      fetchSaleProductsRequest({
+        limit: 6,
+        category: currentProductTabsCategory.saleProducts,
+      })
+    );
+  }, [currentProductTabsCategory.saleProducts]);
+  useEffect(() => {
+    dispatch(
+      fetchBestSellerProductsRequest({
+        limit: 6,
+        category: currentProductTabsCategory.bestSellerProducts,
+      })
+    );
+  }, [currentProductTabsCategory.bestSellerProducts]);
+
   return (
-    <LayoutOne title="Homepage 1">
-      <HeroSliderOne data={heroslideOneData.one} />
-      <Container>
-        <Benefits
-          threeCol
-          style={{
-            marginTop: -75 / 16 + "em",
-            position: "relative",
-            zIndex: 2,
-          }}
-        />
-      </Container>
-      <CategoriesOne data={categoriesOneData.one} />
-      <Container>
+    <LayoutTwo title="Homepage">
+      <HeroSliderOne containerFluid data={heroslideData.one} />
+      <Container fluid>
         <ProductTab
-          data={daleProducts}
-          productCol={{ xs: 12, sm: 8, lg: 6 }}
+          data={featuredProducts}
           onTabChange={(val) =>
             setCurrentProductTabsCategory({
               ...currentProductTabsCategory,
-              daleProducts: val,
+              featuredProducts: val,
             })
           }
           headerCategories={categories.slice(0, 5).map((item) => item.name)}
-          headerTitle="Deal of the week"
+          headerTitle="Featured Product"
+          productClassName="-borderless"
+          productCol={{ xs: 12, sm: 8, lg: 6, xl: 4 }}
         />
       </Container>
-      <IntroductionOne data={introductionOneData.one} />
-      <DowOne data={dowOneData.one} countdownLast={100000000} />
-      <Container>
-        <PartnerOne />
+      <Container fluid>
+        <Benefits className="-bordered" containerFluid />
       </Container>
-    </LayoutOne>
+      <DowTwo countdownLast={100000000} />
+      <Container fluid>
+        <ProductTab
+          data={bestSellerProducts}
+          onTabChange={(val) =>
+            setCurrentProductTabsCategory({
+              ...currentProductTabsCategory,
+              bestSellerProducts: val,
+            })
+          }
+          headerCategories={categories.slice(0, 5).map((item) => item.name)}
+          headerType="row"
+          headerTitle="Best seller"
+          productClassName="-borderless"
+          productCol={{ xs: 12, sm: 8, lg: 6, xl: 4 }}
+        />
+        <ProductTab
+          data={saleProducts}
+          onTabChange={(val) =>
+            setCurrentProductTabsCategory({
+              ...currentProductTabsCategory,
+              saleProducts: val,
+            })
+          }
+          headerCategories={categories.slice(0, 5).map((item) => item.name)}
+          headerType="row"
+          headerTitle="Featured Products"
+          productClassName="-borderless"
+          productCol={{ xs: 12, sm: 8, lg: 6, xl: 4 }}
+        />
+        <IntroductionOne data={introductionOneData.one} />
+        <DowOne data={dowOneData.one} countdownLast={100000000} />
+        <ProductGrid
+          data={products}
+          headerTitle="New Products"
+          productCol={{ xs: 24, sm: 12, md: 8, lg: 6 }}
+          productType="tiny"
+          fiveCol
+        />
+      </Container>
+      <BannerOne data={bannerData.one} />
+    </LayoutTwo>
   );
 }
