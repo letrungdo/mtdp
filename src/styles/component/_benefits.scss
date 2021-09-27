@@ -49,12 +49,8 @@
       margin-bottom: emCal(14, 10);
     }
     &__image {
-      @include imgCenter(
-        $height: emCal(16, 30),
-        $width: emCal(16, 30),
-        $type: contain
-      );
-      margin-bottom: emCal(16, 10);
+      margin: emCal(16, 5) 0;
+      color: var(--green-color);
     }
     &__title {
       @include typo($fw: 600);

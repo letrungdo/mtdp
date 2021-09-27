@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import LayoutTwo from "../components/layout/LayoutTwo";
-import Benefits from "../components/other/Benefits";
+import FieldActivity from "../components/other/FieldActivity";
 import Container from "../components/other/Container";
 import BannerOne from "../components/sections/banner/BannerOne";
 import DowOne from "../components/sections/dale-of-week/DowOne";
@@ -87,9 +87,9 @@ export default function Home() {
           productCol={{ xs: 12, sm: 8, lg: 6, xl: 4 }}
         />
       </Container> */}
-      {/* <Container fluid>
-        <Benefits className="-bordered" containerFluid />
-      </Container> */}
+      <Container fluid>
+        <FieldActivity className="-bordered" containerFluid />
+      </Container>
       {/* <DowTwo countdownLast={100000000} /> */}
       <Container fluid>
         {/* <ProductTab

@@ -1,10 +1,10 @@
-import React from "react";
-import { Row, Col } from "antd";
+import { Col, Row } from "antd";
 import classNames from "classnames";
+import React from "react";
+import fieldActivity from "../../data/field-activity.json";
+import SectionTitle from "./SectionTitle";
 
-import benefitsData from "../../data/benefits.json";
-
-function Benefits({ containerFluid, column, threeCol, style, className }) {
+function FieldActivity({ containerFluid, column, threeCol, style, className }) {
   const renderCol = () => {
     return threeCol
       ? { xs: 24, md: 8 }
@@ -18,18 +18,17 @@ function Benefits({ containerFluid, column, threeCol, style, className }) {
       className={`benefits ${classNames(className, { "-column": column })}`}
       style={style}
     >
+      <SectionTitle title="Lĩnh vực hoạt động" className="-center" />
       <div className="benefits-wrapper">
         <Row gutter={10}>
-          {benefitsData
-            .slice(0, threeCol ? 3 : benefitsData.length)
+          {fieldActivity
+            .slice(0, threeCol ? 3 : fieldActivity.length)
             .map((item, index) => (
               <Col key={index} {...renderCol()}>
                 <div className="benefits-item">
-                  <img
-                    className="benefits-item__image"
-                    src={process.env.PUBLIC_URL + item.iconSrc}
-                    alt="Benefit icon"
-                  />
+                  <i
+                    class={`benefits-item__image fal fa-3x ${item.iconSrc}`}
+                  ></i>
                   <h5 className="benefits-item__title">{item.name}</h5>
                   <p className="benefits-item__description">
                     {item.description}
@@ -43,4 +42,4 @@ function Benefits({ containerFluid, column, threeCol, style, className }) {
   );
 }
 
-export default React.memo(Benefits);
+export default React.memo(FieldActivity);

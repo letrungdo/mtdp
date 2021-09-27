@@ -1,7 +1,7 @@
+import { css } from "@emotion/css";
 import { Col, Row } from "antd";
 import classNames from "classnames";
 import React from "react";
-import Countdown, { zeroPad } from "react-countdown";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
 
@@ -28,7 +28,14 @@ function DowOne({ data, countdownLast }) {
         <SectionTitle title="Tại sao chọn chúng tôi" className="-center" />
         <div className="dow-one-content">
           <Row align="center" gutter={15}>
-            <Col md={12} lg={8}>
+            <Col
+              md={11}
+              lg={8}
+              className={css`
+                display: flex;
+                align-items: center;
+              `}
+            >
               <Row gutter={[0, 30]}>
                 {data.slice(0, 2).map((item, index) => (
                   <Col key={index} span={24}>
@@ -47,7 +54,23 @@ function DowOne({ data, countdownLast }) {
                 alt="Dale of the week image"
               />
             </Col>
-            <Col md={12} lg={8}>
+            <Col
+              sm={2}
+              md={2}
+              lg={0}
+              className={css`
+                height: 30px;
+                width: 30px;
+              `}
+            />
+            <Col
+              md={11}
+              lg={8}
+              className={css`
+                display: flex;
+                align-items: center;
+              `}
+            >
               <Row gutter={[0, 30]}>
                 {data.slice(2, 4).map((item, index) => (
                   <Col key={index} span={24}>
@@ -58,29 +81,6 @@ function DowOne({ data, countdownLast }) {
             </Col>
           </Row>
         </div>
-
-        {/* <Countdown
-          date={Date.now() + countdownLast}
-          renderer={({ days, hours, minutes, seconds }) => {
-            return (
-              <div className="dow-one-countdown">
-                <div className="dow-one-countdown-item">
-                  <h6>{zeroPad(days)}</h6> <span>days</span>
-                </div>
-                <div className="dow-one-countdown-item">
-                  <h6>{zeroPad(hours)}</h6> <span>hr</span>
-                </div>
-                <div className="dow-one-countdown-item">
-                  <h6>{zeroPad(minutes)} </h6>
-                  <span>min</span>
-                </div>
-                <div className="dow-one-countdown-item">
-                  <h6>{zeroPad(seconds)}</h6> <span>sec</span>
-                </div>
-              </div>
-            );
-          }}
-        /> */}
       </Container>
     </div>
   );

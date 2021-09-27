@@ -1,0 +1,22 @@
+[
+  {
+    "iconSrc": "fa-construction",
+    "name": "THI CÔNG XÂY DỰNG",
+    "description": "Chuyên thi công nhà phố, nhà lầu, nhà gỗ, nhà xưởng..."
+  },
+  {
+    "iconSrc": "fa-check-square",
+    "name": "KIỂM ĐỊNH XÂY DỰNG",
+    "description": "Kiểm định và bảo đảm chất lượng công trình xây dựng, chuẩn đoán kỹ thuật công trình xây dựng."
+  },
+  {
+    "iconSrc": "fa-cctv",
+    "name": "GIÁM SÁT CÔNG TRÌNH",
+    "description": "Giám sát thi công để đảm bảo được chất lượng xây lắp đúng kỹ thuật khi xây dựng mọi công trình"
+  },
+  {
+    "iconSrc": "fa-file-signature",
+    "name": "THIẾT KẾ KIẾN TRÚC",
+    "description": "Để xây dựng được một ngôi nhà đẹp, nhất thiết phải có bản thiết kế kiến trúc thật đẹp"
+  }
+]
