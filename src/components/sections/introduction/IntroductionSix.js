@@ -13,7 +13,7 @@ const data = [
   {
     name: "Nguyễn Nhật Giang",
     job: "Giám đốc điều hành",
-    image: "/assets/images/sections/introduction/six/2.png",
+    image: "/assets/images/sections/introduction/six/2.jpg",
   },
   {
     name: "Lee Ji Eun",
@@ -35,7 +35,7 @@ const IntroductionSix = () => {
         <div className="introduction-six-content">
           <Row gutter={[30, 30]}>
             {data.map((item) => (
-              <Col xs={12} sm={12} md={6}>
+              <Col key={item.name} xs={24} sm={12} md={6}>
                 <div
                   className="introduction-six-content__item"
                   style={{ backgroundImage: `url('${item.image}')` }}

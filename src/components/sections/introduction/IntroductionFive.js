@@ -24,7 +24,7 @@ const IntroductionFive = ({ data }) => {
               <SectionTitle title="Tại sao chọn chúng tôi" className="-left" />
               <Row gutter={[30, 30]}>
                 {data.map((item) => (
-                  <Col md={12}>
+                  <Col key={item.iconSrc} md={12}>
                     <div className="introduction-five-benefits__item">
                       <div className="introduction-five-benefits__item-image">
                         {/* <img

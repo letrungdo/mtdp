@@ -26,7 +26,7 @@ function aboutUs() {
         <Container>
           <div className="about-story">
             <div className="about-story__content">
-              <SectionTitle title="Câu chuyện về chúng tôi" className="-left" />
+              <SectionTitle title="Giới thiệu về chúng tôi" className="-left" />
               <div className="about-story__video">
                 <img
                   src={
@@ -79,7 +79,7 @@ function aboutUs() {
           <div className="about-statistical">
             <Row gutter={[30, 30]}>
               {data.statistical.map((item) => (
-                <Col xs={24} md={8}>
+                <Col key={item.icon} xs={24} md={8}>
                   <div className="about-statistical__item">
                     <div className="about-statistical__item-icon">
                       <i className={item.icon}></i>
