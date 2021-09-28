@@ -1,14 +1,48 @@
 import { Breadcrumb, Button, Col, Row } from "antd";
-import React from "react";
-import CountUp from "react-countup";
+import React, { useEffect, useRef } from "react";
+import { useCountUp } from "react-countup";
 import LayoutOne from "../../components/layout/LayoutOne";
 import Container from "../../components/other/Container";
 import SectionTitle from "../../components/other/SectionTitle";
 import IntroductionFive from "../../components/sections/introduction/IntroductionFive";
 import IntroductionSix from "../../components/sections/introduction/IntroductionSix";
-import PartnerOne from "../../components/sections/partners/PartnerOne";
 import data from "../../data/pages/about.json";
 import introductionData from "../../data/sections/dale-of-week.json";
+
+const CountItem = (item) => {
+  const countUpRef = useRef(null);
+
+  const { start } = useCountUp({
+    ref: countUpRef,
+    start: 0,
+    end: item.number,
+    duration: 2,
+  });
+
+  useEffect(() => {
+    const countUp = countUpRef.current;
+    if (!countUp) return;
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          observer.unobserve(countUp);
+          observer.disconnect();
+          start();
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback);
+    observer.observe(countUp);
+  }, [start]);
+
+  return (
+    <div className="about-statistical__item-data__countup">
+      {item.prefix && <span>{item.prefix}</span>}
+      <h3 ref={countUpRef} />
+      {item.suffixes && <span>{item.suffixes}</span>}
+    </div>
+  );
+};
 
 function aboutUs() {
   return (
@@ -83,21 +117,9 @@ function aboutUs() {
                   <div className="about-statistical__item">
                     <div className="about-statistical__item-icon">
                       <i className={item.icon}></i>
-                      {/* <img
-                        src={process.env.PUBLIC_URL + item.icon}
-                        alt="Statistcal icon"
-                      /> */}
                     </div>
                     <div className="about-statistical__item-data">
-                      <CountUp start={0} end={item.number} delay={0}>
-                        {({ countUpRef }) => (
-                          <div className="about-statistical__item-data__countup">
-                            {item.prefix && <span>{item.prefix}</span>}
-                            <h3 ref={countUpRef} />
-                            {item.suffixes && <span>{item.suffixes}</span>}
-                          </div>
-                        )}
-                      </CountUp>
+                      <CountItem {...item} />
                       <p>{item.object}</p>
                     </div>
                   </div>

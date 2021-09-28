@@ -40,18 +40,24 @@
     }
   }
   &-statistical {
-    padding: emCal(16, 50) 0;
+    padding: emCal(16, 50) 1rem;
     border: 1px solid setShadeColor(light);
     margin-bottom: $section-spacing;
     &__item {
       display: flex;
       align-items: center;
       justify-content: center;
-      i {
-        margin-right: emCal(16, 10);
-        color: var(--green-color);
+      &-icon {
+        width: 6rem;
+        margin-left: auto;
+        text-align: center;
+        i {
+          color: var(--green-color);
+          margin-right: 2rem;
+        }
       }
       &-data {
+        min-width: 55%;
         &__countup {
           h3,
           span {
