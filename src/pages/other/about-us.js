@@ -82,7 +82,7 @@ function aboutUs() {
                 <Col xs={24} md={8}>
                   <div className="about-statistical__item">
                     <div className="about-statistical__item-icon">
-                      <i class={item.icon}></i>
+                      <i className={item.icon}></i>
                       {/* <img
                         src={process.env.PUBLIC_URL + item.icon}
                         alt="Statistcal icon"

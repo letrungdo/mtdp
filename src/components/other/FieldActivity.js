@@ -27,7 +27,7 @@ function FieldActivity({ containerFluid, column, threeCol, style, className }) {
               <Col key={index} {...renderCol()}>
                 <div className="benefits-item">
                   <i
-                    class={`benefits-item__image fal fa-3x ${item.iconSrc}`}
+                    className={`benefits-item__image fal fa-3x ${item.iconSrc}`}
                   ></i>
                   <h5 className="benefits-item__title">{item.name}</h5>
                   <p className="benefits-item__description">

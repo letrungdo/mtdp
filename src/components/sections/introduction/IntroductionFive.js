@@ -31,7 +31,7 @@ const IntroductionFive = ({ data }) => {
                           src={process.env.PUBLIC_URL + item.iconSrc}
                           alt="icon"
                         /> */}
-                        <i class={item.iconSrc} />
+                        <i className={item.iconSrc} />
                       </div>
                       <div className="introduction-five-benefits__item-content">
                         <h5>{item.title}</h5>

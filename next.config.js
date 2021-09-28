@@ -5,4 +5,9 @@ module.exports = withLess({
     PUBLIC_URL: "",
   },
   lessLoaderOptions: {},
+  poweredByHeader: false,
+  publicRuntimeConfig: {
+    sendGridApiKey: process.env.SENDGRID_API_KEY,
+    recaptchaKey: process.env.RECAPTCHA_KEY,
+  },
 });

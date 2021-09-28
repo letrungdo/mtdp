@@ -1,13 +1,46 @@
-import { Breadcrumb, Button, Col, Form, Input, Row } from "antd";
-import React from "react";
+import { Breadcrumb, Button, Col, Form, Input, message, Row } from "antd";
+import getConfig from "next/config";
+import React, { useState } from "react";
+import axiosService from "../../common/axiosService";
 import LayoutOne from "../../components/layout/LayoutOne";
 import Container from "../../components/other/Container";
 import SectionTitle from "../../components/other/SectionTitle";
 import companyInfo from "../../data/company-info.json";
 
+const { publicRuntimeConfig } = getConfig();
+
 function contactUs() {
+  const [running, setRunning] = useState(false);
+
   const onFinish = (values) => {
     console.log("Success:", values);
+    if (running) return;
+    setRunning(true);
+    import("recaptcha-v3").then((res) => {
+      res.load(publicRuntimeConfig.recaptchaKey).then((recaptcha) => {
+        recaptcha.execute("submit").then((token) => {
+          if (!token) {
+            message.error("Gửi thất bại!");
+            setRunning(false);
+            return;
+          }
+          console.log("token", token);
+          axiosService
+            .post("/api/contact", {
+              ...values,
+              subject: `[${values.email}] - ${values.name}`,
+            })
+            .then((res) => {
+              message.success("Gửi thành công!");
+              setRunning(false);
+            })
+            .catch((err) => {
+              message.error("Gửi thất bại!");
+              setRunning(false);
+            });
+        });
+      });
+    });
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -29,11 +62,11 @@ function contactUs() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.621640518476!2d106.74180031526474!3d10.686448063769113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe93fd577e906732e!2zQ8O0bmcgVHkgVG5oaCBE4buLY2ggVuG7pSBC4bqjbyBW4buHIEhvw6BuZyBHaWEgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1632655510138!5m2!1svi!2s"
               width="100%"
               height="600"
-              frameborder="0"
+              frameBorder="0"
               style={{ border: 0 }}
               allowFullScreen=""
               aria-hidden="false"
-              tabindex="0"
+              tabIndex="0"
             />
           </div>
           <div className="contact-methods">
@@ -79,7 +112,10 @@ function contactUs() {
                 title="Để lại tin nhắn"
                 className="-center"
               />
-              <p>Nhân viên của chúng tôi sẽ gọi lại sau và giải đáp các thắc mắc của bạn.</p>
+              <p>
+                Nhân viên của chúng tôi sẽ gọi lại sau và giải đáp các thắc mắc
+                của bạn.
+              </p>
             </div>
             <Form
               name="review"
@@ -101,7 +137,11 @@ function contactUs() {
                   <Form.Item
                     name="email"
                     rules={[
-                      { required: true, message: "Vui lòng nhập email của bạn!" },
+                      { type: "email", message: "Email không hợp lệ." },
+                      {
+                        required: true,
+                        message: "Vui lòng nhập email của bạn!",
+                      },
                     ]}
                   >
                     <Input placeholder="Email" />
@@ -114,7 +154,12 @@ function contactUs() {
                 </Col>
                 <Col>
                   <Form.Item>
-                    <Button type="primary" htmlType="submit" shape="round">
+                    <Button
+                      type="primary"
+                      htmlType="submit"
+                      shape="round"
+                      loading={running}
+                    >
                       Gửi
                     </Button>
                   </Form.Item>
