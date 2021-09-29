@@ -1,33 +1,16 @@
 {
   "one": [
     {
-      "background": "/assets/images/hero-slider/one/bg-1.jpg",
-      "subTitle": "Đội ngũ nhân viên nhiều kinh nghiệm",
-      "title": "Đội ngũ nhân viên"
+      "background": "/assets/images/hero-slider/one/bg-1.jpg"
     },
     {
-      "background": "/assets/images/hero-slider/one/bg-2.jpg",
-      "subTitle": "Thi công nhà phố đẹp, nhanh chóng và giá rẻ",
-      "title": "Thi công nhà phố"
+      "background": "/assets/images/hero-slider/one/bg-2.jpg"
     },
     {
       "background": "/assets/images/hero-slider/one/bg-3.jpg"
     },
     {
       "background": "/assets/images/hero-slider/one/bg-4.jpg"
-    },
-    {
-      "background": "/assets/images/hero-slider/one/bg-5.jpg"
-    }
-  ],
-  "four": [
-    {
-      "image": "/assets/images/hero-slider/four/1.png",
-      "background": "/assets/images/hero-slider/four/bg-1.png"
-    },
-    {
-      "image": "/assets/images/hero-slider/four/1.png",
-      "background": "/assets/images/hero-slider/four/bg-2.png"
     }
   ]
 }

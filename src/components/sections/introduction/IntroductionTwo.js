@@ -1,8 +1,16 @@
 import { Col, Row } from "antd";
 import React from "react";
-
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
+
+const IcHeading = ({ title }) => {
+  return (
+    <h3>
+      <i className="fad fa-check-square" />
+      {title}
+    </h3>
+  );
+};
 
 function IntroductionTwo() {
   return (
@@ -23,22 +31,17 @@ function IntroductionTwo() {
             </Col>
             <Col md={12}>
               <div className="introduction-two-content">
-                <SectionTitle title="Welcome To MTDP" hideDecoration />
-                <p>
-                  Sed quia non numquam modi tempora indunt ut labore et dolore
-                  magnam aliquam quaerat a non numquam modi tempora indunt ut
-                  labore et dolore magnam aliquam magnam aliquam quaerat a non
-                  numquam
-                </p>
-                <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/sections/introduction/two/signature.png"
-                  }
-                  alt="signature"
+                <SectionTitle
+                  title="Công ty TNHH Xây dựng Mai Thạch Đại Phát"
+                  hideDecoration
                 />
-                <h3>Lettie Chavez</h3>
-                <h5>LEADER</h5>
+                <p>
+                  Được thành lập năm 2021. Xây dựng Mai Thạch Đại Phát là công
+                  ty chuyên những công trình có yêu cầu đặc biệt như:
+                </p>
+                <IcHeading title="Xây nhà thô còn dang dở" />
+                <IcHeading title="Nhà dự án giao thô cần hoàn thiện gấp" />
+                <IcHeading title="Nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng" />
               </div>
             </Col>
           </Row>

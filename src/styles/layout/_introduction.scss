@@ -77,6 +77,10 @@
     h3 {
       @include typo($fw: 600, $fsz: emCal(16, 22));
       margin-bottom: emCal(16, 10);
+      color: rgb(10, 88, 107);
+      i {
+        margin-right: 1rem;
+      }
     }
     h5 {
       @include typo($fsz: emCal(16, 12), $fw: 600, $color: setColor(coffee));
@@ -84,112 +88,36 @@
   }
 }
 
-.introduction-three {
-  background: {
-    image: url("/assets/images/sections/introduction/three/bg.png");
-    position: center;
-    size: cover;
-    attachment: fixed;
-  }
-  padding: emCal(16, 120) 0;
-  margin-bottom: $section-spacing;
-  &-content {
-    .introduction-three-steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-
-      &-item {
-        text-align: center;
-        position: relative;
-        &:not(:last-child) {
-          &:after {
-            content: "";
-            display: inline-block;
-            background: {
-              image: url("/assets/images/sections/introduction/three/arrow.png");
-              repeat: no-repeat;
-            }
-            width: emCal(16, 190);
-            height: emCal(16, 35);
-            display: block;
-            position: absolute;
-            left: 70%;
-            top: 0;
-          }
-        }
-        img {
-          @include imgCenter(emCAl(16, 130), emCal(16, 130));
-          margin-bottom: emCal(16, 20);
-        }
-        h3 {
-          @include typo(
-            $fsz: emCal(16, 18),
-            $fw: 600,
-            $color: setColor(coffee)
-          );
-          margin-bottom: emCal(18, 15);
-        }
-        p {
-          @include typo($fsz: emCal(16, 18), $color: #fff);
-        }
-      }
-      @include mq(md) {
-        grid-template-columns: repeat(2, 1fr);
-        .introduction-three-steps-item {
-          &:not(:nth-child(n + 3)) {
-            margin-bottom: emCal(14, 30);
-          }
-          &:nth-child(2) {
-            &:after {
-              display: none;
-            }
-          }
-        }
-        &:nth-child(2) {
-        }
-      }
-      @include mq(sm) {
-        grid-template-columns: 1fr;
-        .introduction-three-steps-item {
-          &:after {
-            display: none;
-          }
-          &:not(:last-child) {
-            margin-bottom: emCal(14, 30);
-          }
-        }
-      }
-    }
-  }
-}
-
 .introduction-four {
   background: {
-    image: url("/assets/images/sections/introduction/four/bg.png");
+    image: url("/assets/images/sections/introduction/four/bg.webp");
     position: center;
     size: cover;
     attachment: fixed;
+    opacity: 0.5;
   }
-  padding: emCal(16, 100) 0;
+  padding: emCal(16, 50) 0;
   margin-bottom: $section-spacing;
-  .dow-one-image {
-    @include imgCenter(emCal(16, 205), emCal(16, 205), contain);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  &-content {
+    background-color: #00000080;
+    padding: 1rem 2rem;
+    border-radius: 0 0 10px 10px;
+    max-height: 500px;
+    overflow-y: auto;
   }
-
-  .dow-one-content {
-    .dow-one-content__item {
-      &-image {
-        background-color: #fff;
-      }
-      &-content {
-        h5,
-        p {
-          color: #fff;
-        }
-      }
+  h3 {
+    font-size: emCal(16, 25);
+    padding-top: 1rem;
+    color: beige;
+    i {
+      margin-right: 1rem;
+      color: #30b8ac;
+    }
+    .line {
+      margin-top: 1rem;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, #30b8ac, #fefefe00);
     }
   }
 }

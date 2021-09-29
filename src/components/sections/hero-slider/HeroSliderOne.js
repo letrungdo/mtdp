@@ -83,15 +83,15 @@ function HeroSliderOne({ data, containerFluid }) {
             {Array.from(Array(3), (e, i) => {
               return (
                 <Col key={i} sm={8} md={12} lg={8}>
-                  <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
+                  <Link href={process.env.PUBLIC_URL + "#"}>
                     <a
-                      href={process.env.PUBLIC_URL + "/shop/shop-3-column"}
+                      href={process.env.PUBLIC_URL + "#"}
                       className="zoom-in"
                     >
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          `/assets/images/hero-slider/two/${i + 1}.jpg`
+                          `/assets/images/hero-slider/${i + 1}.jpg`
                         }
                         alt="sub item"
                       />

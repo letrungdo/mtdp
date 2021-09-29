@@ -8,6 +8,8 @@ import DowOne from "../components/sections/dale-of-week/DowOne";
 import DowTwo from "../components/sections/dale-of-week/DowTwo";
 import HeroSliderOne from "../components/sections/hero-slider/HeroSliderOne";
 import IntroductionOne from "../components/sections/introduction/IntroductionOne";
+import IntroductionTwo from "../components/sections/introduction/IntroductionTwo";
+import IntroductionFour from "../components/sections/introduction/IntroductionFour";
 import ProductGrid from "../components/sections/product-thumb/ProductGrid";
 import ProductTab from "../components/sections/product-thumb/ProductTab";
 import categories from "../data/categories.json";
@@ -72,6 +74,8 @@ export default function Home() {
   return (
     <LayoutTwo title="Mai Thạch Đại Phát">
       <HeroSliderOne containerFluid data={heroslideData.one} />
+      <IntroductionTwo />
+      <IntroductionFour />
       {/* <Container fluid>
         <ProductTab
           data={featuredProducts}
