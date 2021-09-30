@@ -120,9 +120,6 @@
       flex-wrap: wrap;
       p {
         @include typo($fw: 500, $color: setShadeColor(medium));
-        @include mq(md) {
-          margin-bottom: emCal(16, 10);
-        }
       }
       img {
         @include imgCenter;

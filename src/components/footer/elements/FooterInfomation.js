@@ -15,9 +15,10 @@ export default function FooterInfomation() {
         </a>
       </Link>
       <ul>
-        <li>Địa chỉ: 2295/84 Huỳnh Tấn Phát Thị Trấn Nhà Bè, H. Nhà Bè, HCM</li>
+        <li>Địa chỉ: {companyInfo.address}</li>
         <li>
-          Điện thoại: <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
+          Điện thoại:{" "}
+          <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
         </li>
         <li>
           Email: <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
