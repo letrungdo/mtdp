@@ -110,7 +110,15 @@
     height: emCal(14, 45);
     font-family: getFontWeight(600);
     text-transform: uppercase;
-    padding: 0 emCal(14, 30);
+    padding: 0 emCal(14, 20);
+    a {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: emCal(16, 18);
+        margin-left: 1rem;
+      }
+    }
   }
   &-img {
     @include mq(lg) {

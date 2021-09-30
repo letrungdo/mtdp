@@ -75,7 +75,6 @@ export default function Home() {
     <LayoutTwo title="Mai Thạch Đại Phát">
       <HeroSliderOne containerFluid data={heroslideData.one} />
       <IntroductionTwo />
-      <IntroductionFour />
       {/* <Container fluid>
         <ProductTab
           data={featuredProducts}
@@ -94,7 +93,7 @@ export default function Home() {
       <Container fluid>
         <FieldActivity className="-bordered" containerFluid />
       </Container>
-      {/* <DowTwo countdownLast={100000000} /> */}
+      <DowTwo countdownLast={100000000} />
       <Container fluid>
         {/* <ProductTab
           data={bestSellerProducts}
@@ -127,6 +126,7 @@ export default function Home() {
         {/* <IntroductionOne data={introductionOneData.one} /> */}
         <DowOne data={dowOneData.one} countdownLast={100000000} />
       </Container>
+      <IntroductionFour />
       {/* <BannerOne data={bannerData.one} /> */}
     </LayoutTwo>
   );
