@@ -18,24 +18,37 @@
   ],
   "four": [
     {
-      "title": "Eat Healthier",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/introduction/four/1.png"
+      "title": "Cam kết thi công đúng 100% những hạng mục công việc đã nêu trong hợp đồng."
     },
     {
-      "title": "We Have Brands",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/introduction/four/2.png"
+      "title": "Tuyệt đối không đưa vật tư giả, vật tư kém chất lượng vào thi công công trình."
     },
     {
-      "title": "Fresh And Clean Products",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/introduction/four/3.png"
+      "title": "Cam kết chịu phạt tiến độ theo đúng thỏa thuận trong hợp đồng."
     },
     {
-      "title": "Modern Process",
-      "description": "Modi tempora incidunt ut labore dolore magnam aliquam",
-      "iconSrc": "/assets/images/sections/introduction/four/4.png"
+      "title": "Giữ giá xây dựng tại thời điểm ký kết hợp đồng cho đến khi hoàn thành công trình."
+    },
+    { "title": "Không bán thầu dưới mọi hình thức" },
+    {
+      "title": "Cam kết chịu trách nhiệm pháp lý đối với công trình do công ty thỉ công theo đúng quy định của pháp luật Việt Nam."
+    },
+    {
+      "title": "Sẵn lòng đền bù mọi thiệt hại vật chất cho công trình và nhà xung quanh nếu lỗi do công ty gây ra."
+    },
+    {
+      "title": "Chế độ bảo hành chu đáo cùng đội ngũ nhân sự chuyên nghiệp và có trách nhiệm."
+    },
+    {
+      "title": "Tuân thủ nghiêm ngặt các quy định an toàn lao động và an toàn phòng chống dịch dưới sự giám sát thường xuyên của Kỹ sư xây dựng và Phòng ATLĐ."
+    },
+    { "title": "Hỗ trợ kiểm tra, thẩm định kết cấu cũ." },
+    {
+      "title": "Hỗ trợ thủ tục và hồ sơ xỉn cấp phép nhà cải tạo."
+    },
+    { "title": "Hỗ trợ bản vẽ cải tạo nhà." },
+    {
+      "title": "Hỗ trợ làm việc với ban dự án về hồ sơ pháp lý, thủ tục thi công công trình, thủ tục hoàn công với nhà dự án"
     }
   ]
 }
