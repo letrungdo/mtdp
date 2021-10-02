@@ -1,10 +1,8 @@
-import React from "react";
 import Link from "next/link";
-
+import React from "react";
 import Container from "../../other/Container";
-import Navigator from "../elements/Navigator";
-import FunctionItems from "../elements/FunctionItems";
 import MobileMenuOpener from "../elements/MobileMenuOpener";
+import Navigator from "../elements/Navigator";
 
 export default function MenuOne() {
   return (
@@ -17,11 +15,11 @@ export default function MenuOne() {
               <img
                 src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
                 alt="MTDP logo"
+                height={45}
               />
             </a>
           </Link>
           <Navigator />
-          {/* <FunctionItems /> */}
         </div>
       </Container>
     </div>

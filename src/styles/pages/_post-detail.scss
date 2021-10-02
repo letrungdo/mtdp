@@ -4,7 +4,7 @@
 
     &__main {
       .post-detail-title {
-        @include typo($fsz: emCal(16, 36), $lh: emCal(36, 48), $fw: 600);
+        @include typo($fsz: emCal(16, 28), $lh: emCal(28, 36), $fw: 600);
         margin-bottom: emCal(36, 10);
       }
       .post-detail-paragraph {

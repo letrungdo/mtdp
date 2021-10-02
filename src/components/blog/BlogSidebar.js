@@ -49,14 +49,14 @@ function BlogSidebar({ recentPostsData }) {
   };
   return (
     <div className="blog-sidebar">
-      <BlogSidebarSection className="-categories" title="Categories">
+      <BlogSidebarSection className="-categories" title="Chuyên mục">
         <ul>
           <li className={classNames({ active: category === "" })}>
             <a
               onClick={(e) => onChooseCategory(e, "")}
               href={process.env.PUBLIC_URL + "#"}
             >
-              All departments
+              All
             </a>
           </li>
           {data.categories.map((item, index) => (
@@ -71,7 +71,7 @@ function BlogSidebar({ recentPostsData }) {
           ))}
         </ul>
       </BlogSidebarSection>
-      <BlogSidebarSection className="-recent-post" title="Recent posts">
+      <BlogSidebarSection className="-recent-post" title="Posts gần đây">
         <FetchDataHandle
           data={recentPostsData}
           renderData={(data) =>
@@ -81,7 +81,7 @@ function BlogSidebar({ recentPostsData }) {
           }
         />
       </BlogSidebarSection>
-      <BlogSidebarSection className="-tags" title="Popular tags">
+      <BlogSidebarSection className="-tags" title="Tags phổ biến">
         {data.tags.map((item, index) => (
           <Button
             className={classNames({ active: tag === item.value })}

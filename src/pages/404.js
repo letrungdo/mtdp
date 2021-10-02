@@ -1,34 +1,32 @@
-import { Button, Col, Row } from "antd";
+import { Breadcrumb, Button, Col, Row } from "antd";
 import Link from "next/link";
 import React from "react";
-import { Breadcrumb } from "antd";
-
 import LayoutOne from "../components/layout/LayoutOne";
 import Container from "../components/other/Container";
 
 export default function error() {
   return (
-    <LayoutOne title="404 Error">
+    <LayoutOne title="Lỗi 404">
       <Container>
         <Breadcrumb separator=">">
           <Breadcrumb.Item>
             <i className="fas fa-home" />
-            Home
+            Trang chủ
           </Breadcrumb.Item>
-          <Breadcrumb.Item>404 Error</Breadcrumb.Item>
+          <Breadcrumb.Item>Lỗi 404</Breadcrumb.Item>
         </Breadcrumb>
         <div className="error">
           <Row gutter={50}>
             <Col xs={24} md={12}>
               <div className="error-content">
-                <h2>OPPS! THIS PAGE COULD NOT BE FOUND</h2>
+                <h2>Trang không tồn tại!</h2>
                 <p>
-                  Sorry bit the page you are looking for does not exist, have
-                  been removed or name changed
+                  Xin lỗi, trang bạn đang tìm kiếm không tồn tại, có thể đã bị
+                  xóa hoặc thay đổi tên.
                 </p>
                 <Button type="primary" shape="round">
                   <Link href={process.env.PUBLIC_URL + "/"}>
-                    <a>Go to homepage</a>
+                    <a>Về trang chủ</a>
                   </Link>
                 </Button>
               </div>

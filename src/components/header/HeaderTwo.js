@@ -1,13 +1,13 @@
 import React from "react";
-import MenuTwo from "./menu/MenuTwo";
+import MenuOne from "./menu/MenuOne";
 
 import TopNavOne from "./top-nav/TopNavOne";
 
 export default function HeaderTwo() {
   return (
     <>
-      <TopNavOne containerFluid />
-      <MenuTwo containerFluid />
+      <TopNavOne />
+      <MenuOne containerFluid />
     </>
   );
 }

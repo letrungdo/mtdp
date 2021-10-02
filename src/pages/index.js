@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import LayoutTwo from "../components/layout/LayoutTwo";
+import LayoutOne from "../components/layout/LayoutOne";
 import FieldActivity from "../components/other/FieldActivity";
 import Container from "../components/other/Container";
 import BannerOne from "../components/sections/banner/BannerOne";
@@ -72,7 +72,7 @@ export default function Home() {
   }, [currentProductTabsCategory.bestSellerProducts]);
 
   return (
-    <LayoutTwo title="Mai Thạch Đại Phát">
+    <LayoutOne title="Mai Thạch Đại Phát">
       <HeroSliderOne containerFluid data={heroslideData.one} />
       <IntroductionTwo />
       {/* <Container fluid>
@@ -128,6 +128,6 @@ export default function Home() {
       </Container>
       <IntroductionFour />
       {/* <BannerOne data={bannerData.one} /> */}
-    </LayoutTwo>
+    </LayoutOne>
   );
 }

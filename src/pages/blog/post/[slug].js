@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import { Breadcrumb, Col, Row } from "antd";
 import { useRouter } from "next/router";
-import { Breadcrumb, Row, Col } from "antd";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import BlogSidebar from "../../../components/blog/BlogSidebar";
+import PostDetailLayout from "../../../components/detail/post/PostDetailLayout";
+import LayoutOne from "../../../components/layout/LayoutOne";
+import Container from "../../../components/other/Container";
+import FetchDataHandle from "../../../components/other/FetchDataHandle";
+import PartnerOne from "../../../components/sections/partners/PartnerOne";
 import {
   fetchPostDetailRequest,
   fetchRecentPostsRequest,
 } from "../../../redux/actions/blogActions";
-import LayoutOne from "../../../components/layout/LayoutOne";
-import Container from "../../../components/other/Container";
-import BlogSidebar from "../../../components/blog/BlogSidebar";
-import PostDetailLayout from "../../../components/detail/post/PostDetailLayout";
-import FetchDataHandle from "../../../components/other/FetchDataHandle";
-import PartnerOne from "../../../components/sections/partners/PartnerOne";
 
 function postDetail() {
   const dispatch = useDispatch();
@@ -25,26 +24,25 @@ function postDetail() {
     dispatch(fetchRecentPostsRequest({ limit: 4 }));
   }, []);
   return (
-    <LayoutOne title="Post detail">
+    <LayoutOne title={postDetail?.data[0]?.title}>
       <Container>
         <Breadcrumb separator=">">
           <Breadcrumb.Item>
             <i className="fas fa-home" />
-            Home
+            Trang chủ
           </Breadcrumb.Item>
           <Breadcrumb.Item>Blog</Breadcrumb.Item>
-          <Breadcrumb.Item>Blog grid with sidebar</Breadcrumb.Item>
         </Breadcrumb>
         <div className="blog-detail">
           <Row gutter={30}>
-            <Col xs={24} lg={6}>
-              <BlogSidebar recentPostsData={recentPosts} />
-            </Col>
             <Col xs={24} lg={18}>
               <FetchDataHandle
                 data={postDetail}
                 renderData={(data) => <PostDetailLayout data={data[0]} />}
               />
+            </Col>
+            <Col xs={24} lg={6}>
+              <BlogSidebar recentPostsData={recentPosts} />
             </Col>
           </Row>
         </div>

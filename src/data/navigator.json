@@ -32,7 +32,7 @@
   },
   "BLOG": {
     "title": "Blog",
-    "href": "/blog/blog-list-sidebar",
+    "href": "/blog",
     "subMenu": [
       { "title": "Blog List Sidebar", "href": "/blog/blog-list-sidebar" },
       { "title": "Blog Grid 2 Column", "href": "/blog/blog-grid-2-column" },

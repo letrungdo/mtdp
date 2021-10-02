@@ -11,11 +11,11 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="title"
-            content="MTDP - Mai Thạch Đại Phát"
+            content="Xây dựng Mai Thạch Đại Phát"
           />
           <meta
             name="description"
-            content="MTDP - Mai Thạch Đại Phát"
+            content="Xây dựng Mai Thạch Đại Phát chuyên xây nhà thô, xây nhà phố, xây nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng..."
           />
           <link rel="icon" href="/favicon.png" />
           <link
