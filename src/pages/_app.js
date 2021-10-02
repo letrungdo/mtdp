@@ -1,17 +1,13 @@
 import { Provider } from "react-redux";
-
-import "../styles/antd.less";
-import "../styles/styles.scss";
 // import Loading from "../components/other/Loading";
 import withReduxStore from "../common/withReduxStore";
-import FetchInitData from "../components/other/FetchInitData";
+import "../styles/antd.less";
+import "../styles/styles.scss";
 
 const App = ({ Component, pageProps, reduxStore }) => {
   return (
     <Provider store={reduxStore}>
-      <FetchInitData>
-        <Component {...pageProps} />
-      </FetchInitData>
+      <Component {...pageProps} />
     </Provider>
   );
 };
