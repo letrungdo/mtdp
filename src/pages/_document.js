@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -9,14 +9,13 @@ class MyDocument extends Document {
     return (
       <Html lang="vi">
         <Head>
-          <meta
-            name="title"
-            content="Xây dựng Mai Thạch Đại Phát"
-          />
+          <meta name="title" content="Xây dựng Mai Thạch Đại Phát" />
           <meta
             name="description"
             content="Xây dựng Mai Thạch Đại Phát chuyên xây nhà thô, xây nhà phố, xây nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng..."
           />
+          <meta property="og:image" content="/assets/images/pages/thumbnail.jpg" />
+          <meta name="image" content="/assets/images/pages/thumbnail.jpg" />
           <link rel="icon" href="/favicon.png" />
           <link
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"

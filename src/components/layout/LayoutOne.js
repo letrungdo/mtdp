@@ -8,13 +8,13 @@ import withHeaderScroll from "../../common/withHeaderScroll";
 
 const ScrolledHeader = withHeaderScroll(HeaderTwo);
 
-function LayoutOne({ title, children, headerClass, footerClass }) {
+function LayoutOne({ title, children, headerClass, footerClass, containerFluid }) {
   return (
     <>
       <Head>
         <title>{title}</title>
       </Head>
-      <ScrolledHeader className={headerClass} />
+      <ScrolledHeader className={headerClass} containerFluid={containerFluid} />
       {children}
       <Footer className={footerClass} />
       <BackTop />

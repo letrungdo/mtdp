@@ -21,7 +21,7 @@ function Footer({ containerFluid, className }) {
         </Container>
       </div>
       <div className="footer-bottom">
-        <Container>
+        <Container fluid={containerFluid}>
           <div className="footer-bottom__wrapper">
             <p>
               Copyright © 2021{" "}

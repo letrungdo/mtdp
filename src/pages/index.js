@@ -72,7 +72,7 @@ export default function Home() {
   }, [currentProductTabsCategory.bestSellerProducts]);
 
   return (
-    <LayoutOne title="Mai Thạch Đại Phát">
+    <LayoutOne title="Mai Thạch Đại Phát" containerFluid>
       <HeroSliderOne containerFluid data={heroslideData.one} />
       <IntroductionTwo />
       {/* <Container fluid>

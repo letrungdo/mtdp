@@ -9,7 +9,7 @@ function DowTwo({ countdownLast }) {
   return (
     <div className="dow-two">
       <Container>
-        <Row align="middle" justify="space-between">
+        <Row justify="space-between" gutter={30}>
           <Col sm={24} lg={12}>
             <div className="dow-two-content">
               <SectionTitle
@@ -45,21 +45,20 @@ function DowTwo({ countdownLast }) {
               />
               <Button type="primary" shape="round">
                 <a href={`tel:${companyInfo.phone}`}>
-                  <i className="fad fa-phone-alt fa-2x" /><span>Gọi ngay</span>
+                  <i className="fad fa-phone-alt fa-2x" />
+                  <span>Gọi ngay</span>
                 </a>
               </Button>
             </div>
           </Col>
-          <Col lg={10}>
-            <div className="dow-two-img up-down-anim">
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  "/assets/images/sections/dale-of-week/two/1.webp"
-                }
-                alt="Dale of the week image"
-              />
-            </div>
+          <Col lg={10} className="dow-two-img up-down-anim">
+            <img
+              src={
+                process.env.PUBLIC_URL +
+                "/assets/images/sections/dale-of-week/two/1.webp"
+              }
+              alt="Dale of the week image"
+            />
           </Col>
         </Row>
       </Container>

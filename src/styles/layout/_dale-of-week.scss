@@ -121,14 +121,11 @@
     }
   }
   &-img {
-    @include mq(lg) {
-      display: none;
-    }
-    @include mq(sm) {
-      display: block;
-    }
+    display: flex;
+    justify-content: center;
     img {
       @include imgCenter($type: contain);
+      max-width: 500px;
     }
   }
 }

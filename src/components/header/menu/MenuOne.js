@@ -4,10 +4,10 @@ import Container from "../../other/Container";
 import MobileMenuOpener from "../elements/MobileMenuOpener";
 import Navigator from "../elements/Navigator";
 
-export default function MenuOne() {
+export default function MenuOne({ containerFluid }) {
   return (
     <div className="menu -style-one">
-      <Container>
+      <Container fluid={containerFluid}>
         <div className="menu-wrapper">
           <MobileMenuOpener />
           <Link href={process.env.PUBLIC_URL + "/"}>
