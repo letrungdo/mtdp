@@ -28,6 +28,12 @@ export default function Home() {
           property="og:image"
           content={`${process.env.PUBLIC_URL}/assets/images/pages/thumbnail.jpg`}
         />
+        <meta property="og:title" content="Xây dựng Mai Thạch Đại Phát" />
+        <meta
+          property="og:description"
+          content="Xây dựng Mai Thạch Đại Phát chuyên xây nhà thô, xây nhà phố, xây nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng..."
+        />
+        <meta property="og:url" content={process.env.PUBLIC_URL} />
       </Head>
       <HeroSliderOne containerFluid data={heroslideData.one} />
       <IntroductionTwo />

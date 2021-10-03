@@ -1,4 +1,4 @@
-import { Breadcrumb, Image } from "antd";
+import { Breadcrumb } from "antd";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -25,10 +25,22 @@ export default function Post({ post, morePosts, preview }) {
           <Breadcrumb.Item>Báo giá</Breadcrumb.Item>
         </Breadcrumb>
         <Head>
-          <meta name="title" content="Xây dựng Mai Thạch Đại Phát" />
+          <meta name="title" content={post.title} />
           <meta name="description" content={post.description} />
-          <meta name="image" content={`${process.env.PUBLIC_URL}${post.ogImage.url}`} />
-          <meta property="og:image" content={`${process.env.PUBLIC_URL}${post.ogImage.url}`} />
+          <meta
+            name="image"
+            content={`${process.env.PUBLIC_URL}${post.ogImage.url}`}
+          />
+          <meta
+            property="og:image"
+            content={`${process.env.PUBLIC_URL}${post.ogImage.url}`}
+          />
+          <meta
+            property="og:url"
+            content={`${process.env.PUBLIC_URL}/bao-gia/${post.slug}`}
+          />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:description" content={post.description} />
         </Head>
         <div className={"bao-gia"}>
           <h1 className="bao-gia-title">{post.title}</h1>
