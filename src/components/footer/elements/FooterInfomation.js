@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import companyInfo from "../../../data/company-info.json";
@@ -8,9 +9,12 @@ export default function FooterInfomation() {
     <div className="footer-info">
       <Link href={process.env.PUBLIC_URL + "/"}>
         <a className="footer-info__logo">
-          <img
+          <Image
             src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
             alt="MTDP Logo"
+            width={200}
+            height={70}
+            objectFit="contain"
           />
         </a>
       </Link>

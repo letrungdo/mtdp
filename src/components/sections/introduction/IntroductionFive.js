@@ -1,4 +1,5 @@
 import { Col, Row } from "antd";
+import Image from "next/image";
 import React from "react";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
@@ -10,12 +11,15 @@ const IntroductionFive = ({ data }) => {
         <Row align="middle" gutter={40}>
           <Col xs={0} sm={12} md={8}>
             <div className="introduction-five-image">
-              <img
+              <Image
                 src={
                   process.env.PUBLIC_URL +
                   "/assets/images/sections/introduction/five/1.jpg"
                 }
                 alt="Xây dựng Mai Thạch Đại Phát"
+                objectFit="contain"
+                height={500}
+                width={340}
               />
             </div>
           </Col>
@@ -27,10 +31,6 @@ const IntroductionFive = ({ data }) => {
                   <Col key={item.iconSrc} md={12}>
                     <div className="introduction-five-benefits__item">
                       <div className="introduction-five-benefits__item-image">
-                        {/* <img
-                          src={process.env.PUBLIC_URL + item.iconSrc}
-                          alt="icon"
-                        /> */}
                         <i className={item.iconSrc} />
                       </div>
                       <div className="introduction-five-benefits__item-content">

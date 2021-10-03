@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
@@ -82,18 +83,18 @@ function HeroSliderOne({ data, containerFluid }) {
           <Row gutter={15}>
             {Array.from(Array(3), (e, i) => {
               return (
-                <Col key={i} sm={8} md={12} lg={8}>
+                <Col key={i} xs={8}>
                   <Link href={process.env.PUBLIC_URL + "#"}>
-                    <a
-                      href={process.env.PUBLIC_URL + "#"}
-                      className="zoom-in"
-                    >
-                      <img
+                    <a>
+                      <Image
                         src={
                           process.env.PUBLIC_URL +
                           `/assets/images/hero-slider/${i + 1}.jpg`
                         }
                         alt="sub item"
+                        layout="responsive"
+                        height={180}
+                        width={300}
                       />
                     </a>
                   </Link>

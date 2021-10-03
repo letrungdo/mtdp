@@ -13,7 +13,7 @@ import heroslideData from "../data/sections/hero-slider.json";
 
 export default function Home() {
   return (
-    <LayoutOne title="Trang chủ" containerFluid>
+    <LayoutOne title="Trang chủ">
       <Head>
         <meta name="title" content="Xây dựng Mai Thạch Đại Phát" />
         <meta
@@ -35,7 +35,7 @@ export default function Home() {
         />
         <meta property="og:url" content={process.env.PUBLIC_URL} />
       </Head>
-      <HeroSliderOne containerFluid data={heroslideData.one} />
+      <HeroSliderOne data={heroslideData.one} />
       <IntroductionTwo />
       <Container fluid>
         <FieldActivity className="-bordered" containerFluid />

@@ -57,7 +57,7 @@ function DowTwo({ countdownLast }) {
                 process.env.PUBLIC_URL +
                 "/assets/images/sections/dale-of-week/two/1.webp"
               }
-              alt="Dale of the week image"
+              alt=""
             />
           </Col>
         </Row>

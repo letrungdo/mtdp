@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { Col, Row } from "antd";
 import classNames from "classnames";
+import Image from "next/image";
 import React from "react";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
@@ -45,13 +46,16 @@ function DowOne({ data, countdownLast }) {
               </Row>
             </Col>
             <Col md={0} lg={8}>
-              <img
+              <Image
                 className="dow-one-image"
                 src={
                   process.env.PUBLIC_URL +
-                  "assets/images/sections/dale-of-week/one/img.jpg"
+                  "/assets/images/sections/dale-of-week/one/img.jpg"
                 }
-                alt="Dale of the week image"
+                alt=""
+                layout="responsive"
+                height={190}
+                width={300}
               />
             </Col>
             <Col

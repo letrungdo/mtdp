@@ -5,7 +5,6 @@
   }
   &-image {
     border-radius: 10px;
-    @include imgCenter($type: contain);
     @include mq(md) {
       display: none;
     }
@@ -127,70 +126,5 @@
       @include imgCenter($type: contain);
       max-width: 500px;
     }
-  }
-}
-
-.dow-three {
-  --green-color: #{setColor(coffee)};
-  margin-bottom: $section-spacing;
-  &-image {
-    padding: 0 emCal(16, 15);
-    text-align: center;
-    @include mq(md) {
-      margin-bottom: emCal(14, 30);
-    }
-    img {
-      @include imgCenter($width: emCal(16, 450), $type: contain);
-    }
-  }
-  &-content {
-    padding: 0 emCal(16, 15);
-    h5 {
-      @include typo($fsz: emCal(16, 30), $color: setColor(green), $fw: 600);
-      margin-bottom: emCal(30, 15);
-      span {
-        @include typo(
-          $fsz: emCal(30, 18),
-          $color: setShadeColor(medium),
-          $fw: 400
-        );
-      }
-    }
-    p {
-      @include typo($color: setShadeColor(medium), $lh: emCal(16, 30));
-      margin-bottom: emCal(30, 20);
-    }
-  }
-  &-countdown {
-    display: flex;
-    margin-bottom: emCal(16, 30);
-    &-item {
-      &:not(:last-child) {
-        margin-right: emCal(16, 15);
-      }
-      background-color: #fff;
-      border-radius: 999px;
-      text-align: center;
-      height: emCal(16, 80);
-      width: emCal(16, 80);
-      box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      h6 {
-        @include typo($fsz: emCal(16, 30), $fw: 600, $color: setColor(green));
-      }
-    }
-  }
-  .ant-btn {
-    font-size: emCal(16, 13);
-    font-family: getFontWeight(600);
-    height: emCal(13, 45);
-    padding: 0 emCal(13, 30);
-    text-transform: uppercase;
-  }
-  &-wrapper {
-    padding: emCal(16, 50) 0;
-    background-color: #fff3dd;
   }
 }

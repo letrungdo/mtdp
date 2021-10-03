@@ -124,7 +124,7 @@
 
 .introduction-five {
   margin-bottom: $section-spacing;
-  // padding-top: emCal(16, 50);
+  padding: emCal(16, 20) 0;
   background: {
     image: url("/assets/images/sections/introduction/five/bg.png");
     size: cover;
@@ -133,12 +133,6 @@
   .section-title {
     h2 {
       font-size: emCal(16, 36);
-    }
-  }
-  &-image {
-    img {
-      @include imgCenter($type: contain);
-      max-width: 100%;
     }
   }
   &-benefits {

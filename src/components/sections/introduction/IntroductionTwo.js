@@ -1,4 +1,5 @@
 import { Col, Row } from "antd";
+import Image from "next/image";
 import React from "react";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
@@ -20,12 +21,15 @@ function IntroductionTwo() {
           <Row>
             <Col md={12}>
               <div className="introduction-two-image">
-                <img
+                <Image
                   src={
                     process.env.PUBLIC_URL +
                     "/assets/images/sections/introduction/two/1.png"
                   }
                   alt="introduction-image"
+                  objectFit="contain"
+                  height={450}
+                  width={600}
                 />
               </div>
             </Col>
