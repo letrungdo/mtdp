@@ -1,5 +1,4 @@
 import { useState } from "react";
-import db from "../../database.json";
 import styles from "../styles/home.module.scss";
 
 export default function AddPost() {
@@ -17,15 +16,15 @@ export default function AddPost() {
 
     // fields check
     if (!title || !content) return setError("All fields are required");
-    for (let i = 0; i < db.blog.length; i++) {
-      const post = db.blog[i];
-      // save the post
-      let response = await fetch("/api/posts", {
-        method: "POST",
-        body: JSON.stringify(post),
-      });
-      console.log("__ok", response);
-    }
+    // for (let i = 0; i < db.blog.length; i++) {
+    //   const post = db.blog[i];
+    //   // save the post
+    //   let response = await fetch("/api/posts", {
+    //     method: "POST",
+    //     body: JSON.stringify(post),
+    //   });
+    //   console.log("__ok", response);
+    // }
 
     // // post structure
     // let post = {
