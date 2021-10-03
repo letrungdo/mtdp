@@ -12,7 +12,7 @@ function PostDetailContent({ data }) {
           className="post-detail-image"
           width="100%"
           title={data.title}
-          src={process.env.PUBLIC_URL + "/assets/images/blog/blog-detail/1.png"}
+          src={"/assets/images/blog/blog-detail/1.png"}
           alt="Post detail image"
           placeholder
         />
@@ -43,7 +43,7 @@ function PostDetailContent({ data }) {
           className="post-detail-image"
           width="100%"
           title="The Personality Trait That Makes People Happier"
-          src={process.env.PUBLIC_URL + "/assets/images/blog/blog-detail/2.png"}
+          src={"/assets/images/blog/blog-detail/2.png"}
           alt="Post detail image"
           placeholder
         />

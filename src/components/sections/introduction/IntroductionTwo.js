@@ -22,10 +22,7 @@ function IntroductionTwo() {
             <Col md={12}>
               <div className="introduction-two-image">
                 <Image
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/sections/introduction/two/1.png"
-                  }
+                  src={"/assets/images/sections/introduction/two/1.png"}
                   alt="introduction-image"
                   objectFit="contain"
                   height={450}

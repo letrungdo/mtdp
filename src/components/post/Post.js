@@ -18,7 +18,7 @@ function Post({ type, className, style, data }) {
                 <Image
                   width="100%"
                   title={data.title}
-                  src={process.env.PUBLIC_URL + data.coverImage}
+                  src={data.coverImage}
                   alt="Post image"
                   placeholder
                   preview={false}
@@ -51,7 +51,7 @@ function Post({ type, className, style, data }) {
                 <a>
                   <Image
                     title={data.title}
-                    src={process.env.PUBLIC_URL + data.coverImage}
+                    src={data.coverImage}
                     alt="Post image"
                     placeholder
                     preview={false}

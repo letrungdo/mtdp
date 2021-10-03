@@ -87,10 +87,7 @@ function HeroSliderOne({ data, containerFluid }) {
                   <Link href={process.env.PUBLIC_URL + "#"}>
                     <a>
                       <Image
-                        src={
-                          process.env.PUBLIC_URL +
-                          `/assets/images/hero-slider/${i + 1}.jpg`
-                        }
+                        src={`/assets/images/hero-slider/${i + 1}.jpg`}
                         alt="sub item"
                         layout="responsive"
                         height={180}

@@ -48,10 +48,7 @@ function DowOne({ data, countdownLast }) {
             <Col md={0} lg={8}>
               <Image
                 className="dow-one-image"
-                src={
-                  process.env.PUBLIC_URL +
-                  "/assets/images/sections/dale-of-week/one/img.jpg"
-                }
+                src={"/assets/images/sections/dale-of-week/one/img.jpg"}
                 alt=""
                 layout="responsive"
                 height={190}

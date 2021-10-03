@@ -12,10 +12,7 @@ const IntroductionFive = ({ data }) => {
           <Col xs={0} sm={12} md={8}>
             <div className="introduction-five-image">
               <Image
-                src={
-                  process.env.PUBLIC_URL +
-                  "/assets/images/sections/introduction/five/1.jpg"
-                }
+                src={"/assets/images/sections/introduction/five/1.jpg"}
                 alt="Xây dựng Mai Thạch Đại Phát"
                 objectFit="contain"
                 height={500}

@@ -10,7 +10,7 @@ export default function FooterInfomation() {
       <Link href={process.env.PUBLIC_URL + "/"}>
         <a className="footer-info__logo">
           <Image
-            src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
+            src={"/assets/images/logo.svg"}
             alt="MTDP Logo"
             width={200}
             height={70}

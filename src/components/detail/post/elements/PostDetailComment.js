@@ -10,7 +10,7 @@ function PostDetailCommentItem({ data }) {
         <Image
           width="80"
           height="80"
-          src={process.env.PUBLIC_URL + data.user.avatar}
+          src={data.user.avatar}
           alt="User avatar image"
           placeholder
         />
