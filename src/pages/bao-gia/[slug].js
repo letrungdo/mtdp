@@ -33,14 +33,6 @@ export default function Post({ post, morePosts, preview }) {
         <div className={"bao-gia"}>
           <h1 className="bao-gia-title">{post.title}</h1>
           <p>{post.description}</p>
-          <Image
-            className="bao-gia-image"
-            title={post.title}
-            src={process.env.PUBLIC_URL + post.ogImage.url}
-            alt="Post detail image"
-            placeholder
-            preview={false}
-          />
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
       </Container>

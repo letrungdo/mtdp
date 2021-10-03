@@ -1,12 +1,12 @@
 ---
 title: "Đơn giá xây dựng phần hoàn thiện"
 description: "Xây nhà phần hoàn thiện giá bao nhiêu? là câu hỏi thường gặp khi chúng ta tìm hiểu và lựa chọn các gói xây dựng nhà. Dịch vụ xây dựng tại công ty Mai Thạch Đại Phát chúng tôi cung cấp đến quý khách chi tiết bảng báo giá xây dựng phần hoàn thiện tại TpHCM"
-coverImage: "/assets/images/bao-gia/xay-dung-phan-hoan-thien/thumbnail.webp"
+coverImage: "/assets/images/bao-gia/xay-dung-phan-hoan-thien/thumbnail.jpg"
 date: "2021-10-03T22:36:09.322Z"
 author:
   name: letrungdo
 ogImage:
-  url: "/assets/images/bao-gia/xay-dung-phan-hoan-thien/thumbnail.webp"
+  url: "/assets/images/bao-gia/xay-dung-phan-hoan-thien/thumbnail.jpg"
 ---
 
 ## BẢNG PHÂN TÍCH VẬT TƯ PHẦN HOÀN THIỆN

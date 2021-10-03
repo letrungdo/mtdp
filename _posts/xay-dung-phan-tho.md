@@ -1,12 +1,12 @@
 ---
 title: "Đơn giá thi công xây dựng nhà phần thô"
 description: "Xây nhà phần thô giá bao nhiêu? là câu hỏi thường gặp khi chúng ta tìm hiểu và lựa chọn các gói xây dựng nhà. Dịch vụ xây dựng tại công ty Mai Thạch Đại Phát chúng tôi cung cấp đến quý khách chi tiết bảng báo giá xây dựng phần thô nhà phố, Biệt thự tại TpHCM"
-coverImage: "/assets/images/bao-gia/xay-dung-phan-tho/thumbnail.webp"
+coverImage: "/assets/images/bao-gia/xay-dung-phan-tho/thumbnail.jpg"
 date: "2021-10-03T21:35:07.322Z"
 author:
   name: letrungdo
 ogImage:
-  url: "/assets/images/bao-gia/xay-dung-phan-tho/thumbnail.webp"
+  url: "/assets/images/bao-gia/xay-dung-phan-tho/thumbnail.jpg"
 ---
 
 Khi có nhu cầu xây dựng nhà cửa, gia chủ cần cân nhắc chọn gói dịch vụ xây dựng phù hợp với thời gian công việc của mình. Các công ty xây dựng hiện nay đều đưa ra những gói xây dựng cơ bản phù hợp, để quý khách lựa chọn gói thầu tốt nhất cho mình.
@@ -29,4 +29,7 @@ Xây nhà phần thô giá bao nhiêu? là câu hỏi thường gặp khi chúng
 
 Dịch vụ xây dựng tại công ty Mai Thạch Đại Phát chúng tôi cung cấp đến quý khách chi tiết bảng báo giá xây dựng phần thô nhà phố, Biệt thự tại TpHCM. Mời quý khách tham khảo bảng báo giá xây nhà phần thô và nhân công hoàn thiện nhà phố, Biệt thự, tính theo m2 xây dựng tại công ty Mai Thạch Đại Phát.
 
-![Đơn giá xây dựng phần thô](/assets/images/bao-gia/xay-dung-phan-tho/gia-xay-nha-phan-tho.jpg)
+![Đơn giá xây dựng phần thô](/assets/images/bao-gia/xay-dung-phan-tho/gia-xay-nha-phan-tho1.jpg)
+![Đơn giá xây dựng phần thô](/assets/images/bao-gia/xay-dung-phan-tho/gia-xay-nha-phan-tho2.jpg)
+![Đơn giá xây dựng phần thô](/assets/images/bao-gia/xay-dung-phan-tho/gia-xay-nha-phan-tho3.jpg)
+![Đơn giá xây dựng phần thô](/assets/images/bao-gia/xay-dung-phan-tho/gia-xay-nha-phan-tho4.jpg)

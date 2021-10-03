@@ -1,12 +1,12 @@
 ---
 title: "Đơn giá thi công xây nhà trọn gói"
 description: "Đơn giá xây nhà trọn gói của Dịch vụ xây dựng nhà trọn gói tại TPHCM của công ty Xây dựng Mai Thạch Đại Phát chúng tôi cung cấp đến Quý khách mọi dịch vụ liên quan về nhà cửa. Từ khâu tư vấn thiết kế, xin phép xây dựng, đến thi công xây dựng trọn gói công trình, hình thức chìa khóa trao tay."
-coverImage: "/assets/images/bao-gia/xay-nha-tron-goi/thumbnail.webp"
+coverImage: "/assets/images/bao-gia/xay-nha-tron-goi/thumbnail.jpg"
 date: "2021-10-03T18:14:01.322Z"
 author:
   name: letrungdo
 ogImage:
-  url: "/assets/images/bao-gia/xay-nha-tron-goi/thumbnail.webp"
+  url: "/assets/images/bao-gia/xay-nha-tron-goi/thumbnail.jpg"
 ---
 
 ## 1. Ưu điểm của việc giao thầu thiết kế thi công xây dựng trọn gói:

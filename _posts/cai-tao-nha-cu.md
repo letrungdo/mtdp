@@ -1,12 +1,12 @@
 ---
 title: "Đơn giá cải tạo nhà cũ"
 description: "Dịch vụ sửa chữa cải tạo nâng cấp nhà của Mai Thạch Đại Phát bao gồm tất cả các quận huyện trên địa bàn TP HCM. Công ty Xây dựng Mai Thạch Đại Phát cung cấp đến quý khách đơn giá sửa chữa cải tạo nhà cũ trọn gói tại Tp HCM."
-coverImage: "/assets/images/bao-gia/cai-tao-nha-cu/thumbnail.webp"
+coverImage: "/assets/images/bao-gia/cai-tao-nha-cu/thumbnail.jpg"
 date: "2021-10-03T22:53:17.322Z"
 author:
   name: letrungdo
 ogImage:
-  url: "/assets/images/bao-gia/cai-tao-nha-cu/thumbnail.webp"
+  url: "/assets/images/bao-gia/cai-tao-nha-cu/thumbnail.jpg"
 ---
 
 Với kinh nghiệm chuyên sâu về cải tạo nâng cấp nhà tại TPHCM, đội ngũ kỹ sư kiến trúc sư giỏi nhiều năm kinh nghiệm đã thiết kế cải tạo nâng cấp nhà ở tại địa bàn Tp HCM, trong thời gian qua công ty chúng tôi đã tham gia tổ chức thiết kế thi công sửa chữa cải tạo nâng cấp nhiều công trình, và được các gia chủ đánh giá cao về chất lượng dịch vụ. Để khẳng định được uy tín, chất lượng, Gia Long luôn tăng cường và đào tạo nguồn nhân lực từ giám sát đến thi công để mang đến cho khách hàng một sản phẩm một công trình chất lượng.
