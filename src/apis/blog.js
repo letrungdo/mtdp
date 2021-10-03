@@ -2,7 +2,7 @@ import axiosService from "../common/axiosService";
 import { API_URL } from "../common/defines";
 import { renderParam } from "../common/utils";
 
-const url = "/blog";
+const url = "/api/posts";
 
 const renderUrl = (url, limit, category) => {
   return (
