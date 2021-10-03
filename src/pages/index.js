@@ -21,10 +21,13 @@ export default function Home() {
           content="Xây dựng Mai Thạch Đại Phát chuyên xây nhà thô, xây nhà phố, xây nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng..."
         />
         <meta
-          property="og:image"
-          content="/assets/images/pages/thumbnail.jpg"
+          name="image"
+          content={`${process.env.PUBLIC_URL}/assets/images/pages/thumbnail.jpg`}
         />
-        <meta name="image" content="/assets/images/pages/thumbnail.jpg" />
+        <meta
+          property="og:image"
+          content={`${process.env.PUBLIC_URL}/assets/images/pages/thumbnail.jpg`}
+        />
       </Head>
       <HeroSliderOne containerFluid data={heroslideData.one} />
       <IntroductionTwo />

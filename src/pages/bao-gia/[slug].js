@@ -27,8 +27,8 @@ export default function Post({ post, morePosts, preview }) {
         <Head>
           <meta name="title" content="Xây dựng Mai Thạch Đại Phát" />
           <meta name="description" content={post.description} />
-          <meta name="image" content={post.ogImage.url} />
-          <meta property="og:image" content={post.ogImage.url} />
+          <meta name="image" content={`${process.env.PUBLIC_URL}${post.ogImage.url}`} />
+          <meta property="og:image" content={`${process.env.PUBLIC_URL}${post.ogImage.url}`} />
         </Head>
         <div className={"bao-gia"}>
           <h1 className="bao-gia-title">{post.title}</h1>

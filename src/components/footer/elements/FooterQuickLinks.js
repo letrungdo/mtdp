@@ -1,7 +1,6 @@
-import React from "react";
+import { Col, Row } from "antd";
 import Link from "next/link";
-import { Row, Col } from "antd";
-
+import React from "react";
 import footerLinks from "../../../data/footer-links.json";
 
 function FooterQuickLinks({ colSize }) {
@@ -15,7 +14,7 @@ function FooterQuickLinks({ colSize }) {
               <ul>
                 {item.items.map((link, index) => (
                   <li key={index}>
-                    <Link href={process.env.PUBLIC_URL + link.href}>
+                    <Link href={link.href}>
                       <a> {link.title}</a>
                     </Link>{" "}
                   </li>
