@@ -9,9 +9,9 @@ ogImage:
   url: "/assets/images/bao-gia/cai-tao-nha-cu/thumbnail.jpg"
 ---
 
-Với kinh nghiệm chuyên sâu về cải tạo nâng cấp nhà tại TPHCM, đội ngũ kỹ sư kiến trúc sư giỏi nhiều năm kinh nghiệm đã thiết kế cải tạo nâng cấp nhà ở tại địa bàn Tp HCM, trong thời gian qua công ty chúng tôi đã tham gia tổ chức thiết kế thi công sửa chữa cải tạo nâng cấp nhiều công trình, và được các gia chủ đánh giá cao về chất lượng dịch vụ. Để khẳng định được uy tín, chất lượng, Gia Long luôn tăng cường và đào tạo nguồn nhân lực từ giám sát đến thi công để mang đến cho khách hàng một sản phẩm một công trình chất lượng.
+Với kinh nghiệm chuyên sâu về cải tạo nâng cấp nhà tại TPHCM, đội ngũ kỹ sư kiến trúc sư giỏi nhiều năm kinh nghiệm đã thiết kế cải tạo nâng cấp nhà ở tại địa bàn Tp HCM, trong thời gian qua công ty chúng tôi đã tham gia tổ chức thiết kế thi công sửa chữa cải tạo nâng cấp nhiều công trình, và được các gia chủ đánh giá cao về chất lượng dịch vụ. Để khẳng định được uy tín, chất lượng, Mai Thạch Đại Phát luôn tăng cường và đào tạo nguồn nhân lực từ giám sát đến thi công để mang đến cho khách hàng một sản phẩm một công trình chất lượng.
 
-## Dịch vụ sửa chữa nhà trọn gói tại Gia Long bao gồm:
+## Dịch vụ sửa chữa nhà trọn gói tại Mai Thạch Đại Phát bao gồm:
 
 - Nhận thiết kế cải tạo nâng cấp mọi công trình lớn nhỏ.
 - Nhận sửa nhà theo yêu cầu của gia chủ.
