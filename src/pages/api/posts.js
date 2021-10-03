@@ -24,10 +24,15 @@ export default async function handler(req, res) {
 
 // Getting all posts.
 async function getPosts(req, res) {
-  console.log("__XX", req.query);
-  const fillter = {};
-  if (req.query.slug) {
-    fillter.slug = req.query.slug;
+  const query = req.query;
+  const fillter = JSON.parse(
+    JSON.stringify({
+      slug: query.slug,
+      category: query.category,
+    })
+  );
+  if (query.tag_like) {
+    fillter.tag = { $in: [query.tag_like] };
   }
   try {
     let { db } = await connectToDatabase();
