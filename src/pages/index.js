@@ -22,11 +22,11 @@ export default function Home() {
         />
         <meta
           name="image"
-          content={`${process.env.PUBLIC_URL}/assets/images/pages/thumbnail.jpg`}
+          content={`${process.env.PUBLIC_URL}/assets/images/thumbnail.jpg`}
         />
         <meta
           property="og:image"
-          content={`${process.env.PUBLIC_URL}/assets/images/pages/thumbnail.jpg`}
+          content={`${process.env.PUBLIC_URL}/assets/images/thumbnail.jpg`}
         />
         <meta property="og:title" content="Xây dựng Mai Thạch Đại Phát" />
         <meta
