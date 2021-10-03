@@ -9,9 +9,13 @@
   {
     "title": "Báo giá",
     "items": [
-      { "title": "Thiết kế kiến trúc", "href": "#" },
-      { "title": "XD phần thô", "href": "#" },
-      { "title": "XD phần hoàn thiện", "href": "#" }
+      { "title": "Xây nhà trọn gói", "href": "/bao-gia/xay-nha-tron-goi" },
+      { "title": "Xây dựng phần thô", "href": "/bao-gia/xay-dung-phan-tho" },
+      {
+        "title": "Xây dựng phần hoàn thiện",
+        "href": "/bao-gia/xay-dung-phan-hoan-thien"
+      },
+      { "title": "Cải tạo nhà cũ", "href": "/bao-gia/cai-tao-nha-cu" }
     ]
   },
   {

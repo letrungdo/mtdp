@@ -63,20 +63,11 @@ function Navigator() {
           </div>
         </ul>
       </li> */}
-      <li className="navigation-item">
+      {/* <li className="navigation-item">
         <Link href={process.env.PUBLIC_URL + navigatorData.BLOG.href}>
           <a className="navigation-item__title">{navigatorData.BLOG.title}</a>
         </Link>
-        {/* <ul className="navigation-item__submenu">
-          {navigatorData.BLOG.subMenu.map((item, index) => (
-            <li key={index}>
-              <Link href={process.env.PUBLIC_URL + item.href}>
-                <a>{item.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul> */}
-      </li>
+      </li> */}
       <li className="navigation-item -toggleable">
         <Link href={process.env.PUBLIC_URL + navigatorData.PAGES.href}>
           <a className="navigation-item__title">{navigatorData.PAGES.title}</a>

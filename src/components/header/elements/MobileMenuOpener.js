@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import { Drawer } from "antd";
-
+import React, { useState } from "react";
 import MobileNavigator from "./MobileNavigator";
 
 function MobileMenuOpener() {
@@ -24,6 +23,7 @@ function MobileMenuOpener() {
         visible={visible}
         placement="left"
         width={320}
+        closeIcon={<i class="fad fa-times fa-2x" />}
       >
         <MobileNavigator />
       </Drawer>

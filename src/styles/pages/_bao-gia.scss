@@ -1,0 +1,38 @@
+.bao-gia {
+  &-title {
+    @include typo($fsz: emCal(16, 30), $lh: emCal(30, 36), $fw: 600);
+    margin-bottom: emCal(36, 16);
+  }
+  &-image {
+    margin-bottom: emCal(16, 20);
+    img {
+      @include imgCenter;
+    }
+  }
+  margin-bottom: emCal(16, 50);
+  h2 {
+    @include typo($fsz: emCal(16, 26), $fw: 600);
+  }
+  h3 {
+    @include typo($fsz: emCal(16, 22), $fw: 600);
+  }
+  h2,
+  h3 {
+    margin-bottom: emCal(20, 16);
+  }
+  p {
+    @include typo($lh: emCal(16, 30));
+    margin-bottom: emCal(16, 16);
+  }
+  img {
+    @include imgCenter;
+  }
+  ul,
+  ol {
+    padding: 0 2rem;
+    margin-bottom: 1em;
+    li {
+      @include typo($lh: emCal(16, 30), $fw: 500);
+    }
+  }
+}

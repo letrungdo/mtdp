@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build",
-    "server": "json-server --watch database.json --port 6969"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -17,6 +15,7 @@
     "axios": "^0.21.4",
     "classnames": "^2.3.1",
     "dayjs": "^1.10.7",
+    "gray-matter": "^4.0.3",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
     "mongodb": "^4.1.2",
@@ -33,10 +32,9 @@
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
+    "remark": "13.0.0",
+    "remark-html": "13.0.1",
     "sass": "^1.42.1",
     "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "json-server": "^0.16.3"
   }
 }

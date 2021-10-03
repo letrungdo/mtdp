@@ -53,11 +53,11 @@ function MobileNavigator() {
             ))}
           </SubMenu>
         </SubMenu> */}
-        <Menu.Item key="blog">
+        {/* <Menu.Item key="blog">
           <Link href={process.env.PUBLIC_URL + navigatorData.BLOG.href}>
             <a>{navigatorData.BLOG.title}</a>
           </Link>
-        </Menu.Item>
+        </Menu.Item> */}
         <SubMenu key="pages" title={navigatorData.PAGES.title}>
           {navigatorData.PAGES.subMenu.map((item) => (
             <Menu.Item key={item.title}>

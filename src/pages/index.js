@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import LayoutOne from "../components/layout/LayoutOne";
 import Container from "../components/other/Container";
@@ -12,7 +13,19 @@ import heroslideData from "../data/sections/hero-slider.json";
 
 export default function Home() {
   return (
-    <LayoutOne title="Mai Thạch Đại Phát" containerFluid>
+    <LayoutOne title="Trang chủ" containerFluid>
+      <Head>
+        <meta name="title" content="Xây dựng Mai Thạch Đại Phát" />
+        <meta
+          name="description"
+          content="Xây dựng Mai Thạch Đại Phát chuyên xây nhà thô, xây nhà phố, xây nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng..."
+        />
+        <meta
+          property="og:image"
+          content="/assets/images/pages/thumbnail.jpg"
+        />
+        <meta name="image" content="/assets/images/pages/thumbnail.jpg" />
+      </Head>
       <HeroSliderOne containerFluid data={heroslideData.one} />
       <IntroductionTwo />
       <Container fluid>

@@ -12,7 +12,7 @@ function LayoutOne({ title, children, headerClass, footerClass, containerFluid }
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title} - Mai Thạch Đại Phát</title>
       </Head>
       <ScrolledHeader className={headerClass} containerFluid={containerFluid} />
       {children}

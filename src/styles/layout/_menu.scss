@@ -1,3 +1,6 @@
+.ant-drawer-close {
+  color: rgb(255, 87, 87);
+}
 .menu {
   &-wrapper {
     display: flex;
@@ -12,6 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 2rem;
     &-navigator {
       border-right: 0;
       margin-bottom: emCal(14, 50);
