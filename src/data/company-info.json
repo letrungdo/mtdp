@@ -87,5 +87,24 @@
         "title": "Hỗ trợ làm việc với ban dự án về hồ sơ pháp lý, thủ tục thi công công trình, thủ tục hoàn công với nhà dự án"
       }
     ]
-  }
+  },
+  "statistical": [
+    {
+      "number": 100,
+      "suffixes": "%",
+      "object": "Khách hàng vui vẻ",
+      "icon": "fal fa-thumbs-up fa-3x"
+    },
+    {
+      "number": 1200,
+      "object": "Nguồn nhân lực",
+      "icon": "fal fa-users fa-3x"
+    },
+    {
+      "number": 16,
+      "prefix": "+",
+      "object": "Dự án đã hoàn thành",
+      "icon": "fal fa-warehouse-alt fa-3x"
+    }
+  ]
 }

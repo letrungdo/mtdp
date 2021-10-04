@@ -1,13 +1,4 @@
 .header-function-menu {
-  &-one {
-    .function-menu-wrapper {
-      .search-form {
-        @include mq(md) {
-          margin-bottom: emCal(14, 15);
-        }
-      }
-    }
-  }
   &-two {
     .search-form {
       @include mq(md) {

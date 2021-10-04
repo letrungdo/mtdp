@@ -56,7 +56,6 @@ export default function Home() {
         <DowOne data={companyInfo.introduction.one} countdownLast={100000000} />
       </Container>
       <IntroductionFour />
-      {/* <BannerOne data={bannerData.one} /> */}
     </LayoutOne>
   );
 }

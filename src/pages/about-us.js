@@ -7,7 +7,6 @@ import SectionTitle from "../components/other/SectionTitle";
 import IntroductionFive from "../components/sections/introduction/IntroductionFive";
 import IntroductionSix from "../components/sections/introduction/IntroductionSix";
 import companyInfo from "../data/company-info.json";
-import data from "../data/pages/about.json";
 
 const CountItem = (item) => {
   const countUpRef = useRef(null);
@@ -110,7 +109,7 @@ function aboutUs() {
           </div>
           <div className="about-statistical">
             <Row gutter={[30, 30]}>
-              {data.statistical.map((item) => (
+              {companyInfo.statistical.map((item) => (
                 <Col key={item.icon} xs={24} md={8}>
                   <div className="about-statistical__item">
                     <div className="about-statistical__item-icon">
