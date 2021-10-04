@@ -57,9 +57,10 @@ function HeroSliderOne({ data, containerFluid }) {
               })}`}
             >
               <div className="hero-slider-background">
-                <img
-                  src={process.env.PUBLIC_URL + item.background}
+                <Image
+                  src={item.background}
                   alt="background image"
+                  layout="fill"
                 />
               </div>
               <Container>
