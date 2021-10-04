@@ -25,7 +25,7 @@ function IntroductionTwo() {
                   src={"/assets/images/sections/introduction/two/1.png"}
                   alt="introduction-image"
                   objectFit="contain"
-                  height={450}
+                  height={400}
                   width={600}
                 />
               </div>

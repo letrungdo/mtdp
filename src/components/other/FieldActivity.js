@@ -4,7 +4,7 @@ import React from "react";
 import fieldActivity from "../../data/field-activity.json";
 import SectionTitle from "./SectionTitle";
 
-function FieldActivity({ containerFluid, column, threeCol, style, className }) {
+function FieldActivity({ column, threeCol, style, className }) {
   const renderCol = () => {
     return threeCol
       ? { xs: 24, md: 8 }
@@ -12,7 +12,6 @@ function FieldActivity({ containerFluid, column, threeCol, style, className }) {
       ? { xs: 24, sm: 12, md: 6, lg: 24 }
       : { xs: 24, md: 6 };
   };
-  const col = renderCol();
   return (
     <div
       className={`benefits ${classNames(className, { "-column": column })}`}

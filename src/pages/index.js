@@ -37,8 +37,8 @@ export default function Home() {
       </Head>
       <HeroSliderOne data={heroslideData.one} />
       <IntroductionTwo />
-      <Container fluid>
-        <FieldActivity className="-bordered" containerFluid />
+      <Container>
+        <FieldActivity />
       </Container>
       <DowTwo countdownLast={100000000} />
       <Container fluid>
