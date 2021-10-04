@@ -3,8 +3,8 @@ import { Skeleton, Empty } from "antd";
 
 export default function FetchDataHandle({
   data,
-  errorMessage = "Get products fail, please try again",
-  emptyDescription = "No product in this category",
+  errorMessage = "Lỗi, vui lòng thử lại.",
+  emptyDescription = "Không có bài viết trong chuyên mục này",
   renderData,
 }) {
   return data.loading ? (

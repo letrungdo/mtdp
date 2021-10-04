@@ -1,27 +1,17 @@
-import React from "react";
 import classNames from "classnames";
-import { Button } from "antd";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import Post from "../../components/post/Post";
 import {
   setCurrentCategory,
   setCurrentTag,
 } from "../../redux/actions/blogFilterActions";
 import FetchDataHandle from "../other/FetchDataHandle";
-import Post from "../../components/post/Post";
 
 const data = {
   categories: [
-    { name: "Healthy", value: "healthy" },
-    { name: "Nutrition Meal", value: "nutrition-meal" },
-    { name: "Organic Planting", value: "organic-planting" },
-    { name: "Recipes", value: "recipes" },
-  ],
-  tags: [
-    { name: "All tag", value: "" },
-    { name: "fresh", value: "fresh" },
-    { name: "vegetable", value: "vegetable" },
-    { name: "meat", value: "meat" },
+    { name: "Xây dựng", value: "xay-dung" },
+    { name: "Thiết kế", value: "thiet-ke" },
   ],
 };
 
@@ -56,7 +46,7 @@ function BlogSidebar({ recentPostsData }) {
               onClick={(e) => onChooseCategory(e, "")}
               href={process.env.PUBLIC_URL + "#"}
             >
-              All
+              Tấc cả
             </a>
           </li>
           {data.categories.map((item, index) => (
@@ -80,17 +70,6 @@ function BlogSidebar({ recentPostsData }) {
             ))
           }
         />
-      </BlogSidebarSection>
-      <BlogSidebarSection className="-tags" title="Tags phổ biến">
-        {data.tags.map((item, index) => (
-          <Button
-            className={classNames({ active: tag === item.value })}
-            onClick={() => onChooseTag(item.value)}
-            key={index}
-          >
-            {item.name}
-          </Button>
-        ))}
       </BlogSidebarSection>
     </div>
   );

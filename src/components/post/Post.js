@@ -73,7 +73,7 @@ function Post({ type, className, style, data }) {
               </Link>
               <div className="post-info">
                 <p className="credit date">{formatDate(data.publicDate)}</p>
-                <p className="credit comment">{data.comments.length} Comment</p>
+                <p className="credit comment">{data.comments.length} Bình luận</p>
               </div>
               <p className="post-description">{data.shortDescription}</p>
               <Link
@@ -81,7 +81,7 @@ function Post({ type, className, style, data }) {
                 as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
               >
                 <a className="post-readmore">
-                  Read More
+                  Xem thêm
                   <span>
                     <i className="arrow_carrot-2right" />
                   </span>
