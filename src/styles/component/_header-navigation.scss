@@ -7,15 +7,6 @@
     position: relative;
     display: inline-block;
     padding: 0 20px;
-    &.-toggleable {
-      .navigation-item__title {
-        &:after {
-          content: "\33";
-          font-family: "ElegantIcons";
-          margin-left: emCal(16, 10);
-        }
-      }
-    }
     &:last-child {
       padding-right: 0;
       .menu-item {
@@ -43,6 +34,9 @@
 
       &.active {
         color: setColor(green);
+      }
+      .fa-angle-down {
+        margin-left: emCal(16, 10);
       }
     }
     &__submenu {

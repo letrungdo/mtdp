@@ -14,11 +14,6 @@ class MyDocument extends Document {
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
             rel="stylesheet"
           />
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-          />
-          <link href="/assets/css/elegant-icon.css" rel="stylesheet" />
           <link href="/assets/css/slick.min.css" rel="stylesheet" />
         </Head>
         <body>
