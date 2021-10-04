@@ -39,8 +39,8 @@ function IntroductionTwo() {
                   className="sanim"
                 />
                 <p className="sanim">
-                  Được thành lập năm 2021. Xây dựng Mai Thạch Đại Phát là công
-                  ty chuyên những công trình có yêu cầu đặc biệt như:
+                  Mai Thạch Đại Phát là công ty chuyên xây dựng những công trình
+                  có yêu cầu đặc biệt như:
                 </p>
                 {data.two.map((d, i) => (
                   <IcHeading key={i} className="sanim" {...d} />

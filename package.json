@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -37,5 +38,8 @@
     "sass": "^1.42.1",
     "scrollreveal": "^4.0.9",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "next-sitemap": "^1.6.173"
   }
 }

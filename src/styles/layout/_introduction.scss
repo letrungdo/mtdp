@@ -54,13 +54,13 @@
 
 .introduction-two {
   margin-bottom: $section-spacing;
-  &-wrapper {
-    background: {
-      image: url("/assets/images/sections/introduction/two/bg.png");
-      size: cover;
-      position: center;
-    }
-  }
+  // &-wrapper {
+  //   background: {
+  //     image: url("/assets/images/sections/introduction/two/bg.png");
+  //     size: cover;
+  //     position: center;
+  //   }
+  // }
   &-image {
     img {
       max-width: 100%;
