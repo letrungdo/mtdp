@@ -3,47 +3,9 @@
     "title": "Trang chủ",
     "href": "/"
   },
-  "SHOP": {
-    "title": "Shop",
-    "href": "/shop/shop-grid-3-column",
-    "subMenu": {
-      "layout": [
-        { "title": "Shop Fullwidth", "href": "/shop/shop-fullwidth" },
-        { "title": "Shop 3 Column", "href": "/shop/shop-3-column" }
-      ],
-      "detail": [
-        {
-          "title": "Shop Detail Fullwidth",
-          "href": "/shop/product-detail-fullwidth"
-        },
-        {
-          "title": "Shop Detail Sidebar",
-          "href": "/shop/product-detail-sidebar"
-        }
-      ],
-      "pages": [
-        { "title": "Checkout", "href": "/shop/checkout" },
-        { "title": "Order Complete", "href": "/shop/order-complete" },
-        { "title": "Wishlist", "href": "/shop/wishlist" },
-        { "title": "Compare", "href": "/shop/compare" },
-        { "title": "Cart", "href": "/shop/cart" }
-      ]
-    }
-  },
   "BLOG": {
     "title": "Blog",
-    "href": "/blog",
-    "subMenu": [
-      { "title": "Blog List Sidebar", "href": "/blog/blog-list-sidebar" },
-      { "title": "Blog Grid 2 Column", "href": "/blog/blog-grid-2-column" },
-      { "title": "Blog Grid Sidebar", "href": "/blog/blog-grid-sidebar" },
-      { "title": "Blog Masonry", "href": "/blog/blog-masonry" },
-      {
-        "title": "Blog Grid 1 Column Sidebar",
-        "href": "/blog/blog-grid-1-column-sidebar"
-      },
-      { "title": "Blog Detail Sidebar", "href": "/blog/blog-detail" }
-    ]
+    "href": "/blog"
   },
   "PAGES": {
     "title": "Báo giá",
@@ -51,16 +13,19 @@
     "subMenu": [
       { "title": "Xây nhà trọn gói", "href": "/bao-gia/xay-nha-tron-goi" },
       { "title": "Xây dựng phần thô", "href": "/bao-gia/xay-dung-phan-tho" },
-      { "title": "Xây dựng phần hoàn thiện", "href": "/bao-gia/xay-dung-phan-hoan-thien" },
+      {
+        "title": "Xây dựng phần hoàn thiện",
+        "href": "/bao-gia/xay-dung-phan-hoan-thien"
+      },
       { "title": "Cải tạo nhà cũ", "href": "/bao-gia/cai-tao-nha-cu" }
     ]
   },
   "CONTACT": {
     "title": "Liên hệ",
-    "href": "/other/contact-us"
+    "href": "/contact-us"
   },
   "ABOUT": {
     "title": "Giới thiệu",
-    "href": "/other/about-us"
+    "href": "/about-us"
   }
 }

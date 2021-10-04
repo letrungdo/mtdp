@@ -1,11 +1,11 @@
 import { Breadcrumb, Button, Col, Form, Input, message, Row } from "antd";
 import getConfig from "next/config";
 import React, { useState } from "react";
-import axiosService from "../../common/axiosService";
-import LayoutOne from "../../components/layout/LayoutOne";
-import Container from "../../components/other/Container";
-import SectionTitle from "../../components/other/SectionTitle";
-import companyInfo from "../../data/company-info.json";
+import axiosService from "../common/axiosService";
+import LayoutOne from "../components/layout/LayoutOne";
+import Container from "../components/other/Container";
+import SectionTitle from "../components/other/SectionTitle";
+import companyInfo from "../data/company-info.json";
 
 const { publicRuntimeConfig } = getConfig();
 

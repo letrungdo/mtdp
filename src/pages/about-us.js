@@ -1,13 +1,13 @@
 import { Breadcrumb, Button, Col, Row } from "antd";
 import React, { useEffect, useRef } from "react";
 import { useCountUp } from "react-countup";
-import LayoutOne from "../../components/layout/LayoutOne";
-import Container from "../../components/other/Container";
-import SectionTitle from "../../components/other/SectionTitle";
-import IntroductionFive from "../../components/sections/introduction/IntroductionFive";
-import IntroductionSix from "../../components/sections/introduction/IntroductionSix";
-import data from "../../data/pages/about.json";
-import introductionData from "../../data/sections/dale-of-week.json";
+import LayoutOne from "../components/layout/LayoutOne";
+import Container from "../components/other/Container";
+import SectionTitle from "../components/other/SectionTitle";
+import IntroductionFive from "../components/sections/introduction/IntroductionFive";
+import IntroductionSix from "../components/sections/introduction/IntroductionSix";
+import data from "../data/pages/about.json";
+import introductionData from "../data/sections/dale-of-week.json";
 
 const CountItem = (item) => {
   const countUpRef = useRef(null);

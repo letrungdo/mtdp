@@ -2,8 +2,8 @@
   {
     "title": "Thông tin",
     "items": [
-      { "title": "Giới thiệu", "href": "/other/about-us" },
-      { "title": "Liên hệ", "href": "/other/contact-us" }
+      { "title": "Giới thiệu", "href": "/about-us" },
+      { "title": "Liên hệ", "href": "/contact-us" }
     ]
   },
   {
