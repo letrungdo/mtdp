@@ -46,7 +46,7 @@ function postDetail() {
             </Col>
           </Row>
         </div>
-        <PartnerOne />
+        {/* <PartnerOne /> */}
       </Container>
     </LayoutOne>
   );
