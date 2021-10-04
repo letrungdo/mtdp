@@ -23,7 +23,7 @@ function FieldActivity({ column, threeCol, style, className }) {
           {fieldActivity
             .slice(0, threeCol ? 3 : fieldActivity.length)
             .map((item, index) => (
-              <Col key={index} {...renderCol()}>
+              <Col key={index} {...renderCol()} className="sanim">
                 <div className="benefits-item">
                   <i
                     className={`benefits-item__image fal fa-3x ${item.iconSrc}`}

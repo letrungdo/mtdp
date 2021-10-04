@@ -39,7 +39,7 @@ function DowOne({ data, countdownLast }) {
             >
               <Row gutter={[0, 30]}>
                 {data.slice(0, 2).map((item, index) => (
-                  <Col key={index} span={24}>
+                  <Col key={index} span={24} className="sanim">
                     <DownOneItem reverse data={item} />
                   </Col>
                 ))}
@@ -74,7 +74,7 @@ function DowOne({ data, countdownLast }) {
             >
               <Row gutter={[0, 30]}>
                 {data.slice(2, 4).map((item, index) => (
-                  <Col key={index} span={24}>
+                  <Col key={index} span={24} className="sanim">
                     <DownOneItem data={item} />
                   </Col>
                 ))}

@@ -1,12 +1,13 @@
 import { Col, Row } from "antd";
 import Image from "next/image";
 import React from "react";
+import data from "../../../data/sections/introduction.json";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
 
-const IcHeading = ({ title }) => {
+const IcHeading = ({ title, className }) => {
   return (
-    <h3>
+    <h3 className={className}>
       <i className="fad fa-check-square" />
       {title}
     </h3>
@@ -35,14 +36,15 @@ function IntroductionTwo() {
                 <SectionTitle
                   title="Công ty TNHH Xây dựng Mai Thạch Đại Phát"
                   hideDecoration
+                  className="sanim"
                 />
-                <p>
+                <p className="sanim">
                   Được thành lập năm 2021. Xây dựng Mai Thạch Đại Phát là công
                   ty chuyên những công trình có yêu cầu đặc biệt như:
                 </p>
-                <IcHeading title="Xây nhà thô còn dang dở" />
-                <IcHeading title="Nhà dự án giao thô cần hoàn thiện gấp" />
-                <IcHeading title="Nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng" />
+                {data.two.map((d, i) => (
+                  <IcHeading key={i} className="sanim" {...d} />
+                ))}
               </div>
             </Col>
           </Row>

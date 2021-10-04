@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import LayoutOne from "../components/layout/LayoutOne";
 import Container from "../components/other/Container";
 import FieldActivity from "../components/other/FieldActivity";
@@ -12,6 +12,18 @@ import dowOneData from "../data/sections/dale-of-week.json";
 import heroslideData from "../data/sections/hero-slider.json";
 
 export default function Home() {
+  useEffect(() => {
+    import("scrollreveal").then((m) => {
+      const scrollReveal = m.default;
+      scrollReveal().reveal(".sanim", {
+        delay: 200,
+        distance: "30px",
+        origin: "bottom",
+        duration: 1000,
+        interval: 50,
+      });
+    });
+  }, []);
   return (
     <LayoutOne title="Trang chủ">
       <Head>
