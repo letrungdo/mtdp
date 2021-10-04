@@ -2,5 +2,90 @@
   "phone": "0937451910",
   "email": "maithachdaiphat@gmail.com",
   "address": "21 Nguyễn Thị Thơi, P. Hiệp Thành, Quận 12, Tp. HCM",
-  "mapsIframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.201491229823!2d106.6369509152655!3d10.87227406038907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529fb17445c0f%3A0x3cdb3af11d530455!2zMjEgTmd1eeG7hW4gVGjhu4sgVGjGoWksIEhp4buHcCBUaMOgbmgsIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1633014778276!5m2!1svi!2s"
+  "mapsIframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.201491229823!2d106.6369509152655!3d10.87227406038907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529fb17445c0f%3A0x3cdb3af11d530455!2zMjEgTmd1eeG7hW4gVGjhu4sgVGjGoWksIEhp4buHcCBUaMOgbmgsIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1633014778276!5m2!1svi!2s",
+  "companyName": "Công ty TNHH tư vấn thiết kế & xây dựng thương mại Mai Thạch - Đại Phát",
+  "slider": [
+    {
+      "background": "/assets/images/hero-slider/one/bg-1.jpg"
+    },
+    {
+      "background": "/assets/images/hero-slider/one/bg-2.jpg"
+    },
+    {
+      "background": "/assets/images/hero-slider/one/bg-3.jpg"
+    },
+    {
+      "background": "/assets/images/hero-slider/one/bg-4.jpg"
+    }
+  ],
+  "introduction": {
+    "one": [
+      {
+        "title": "60 Đội thợ có sẵn",
+        "description": "Thi công ngay sau giãn cách",
+        "iconSrc": "fal fa-users-class fa-3x"
+      },
+      {
+        "title": "100% Nhân sự đã được tiêm vaccine",
+        "description": "Nhân sự tiếp xúc trực tiếp với khách hàng đã được tiêm 2 mũi vaccine",
+        "iconSrc": "fal fa-syringe fa-3x"
+      },
+      {
+        "title": "Đảm bảo thi công không gián đoạn",
+        "description": "Nguồn nhân lực dồi dào",
+        "iconSrc": "fal fa-balance-scale fa-3x"
+      },
+      {
+        "title": "Cam kết dịch vụ",
+        "description": "Cam kết thi công đúng 100% những hạn mục đã nêu trong hợp đồng",
+        "iconSrc": "fal fa-badge-check fa-3x"
+      }
+    ],
+    "two": [
+      {
+        "title": "Xây nhà thô còn dang dở"
+      },
+      {
+        "title": "Nhà dự án giao thô cần hoàn thiện gấp"
+      },
+      {
+        "title": "Nhà cho thuê, văn phòng cần sửa chữa cải tạo, thay đổi công năng"
+      }
+    ],
+    "four": [
+      {
+        "title": "Cam kết thi công đúng 100% những hạng mục công việc đã nêu trong hợp đồng."
+      },
+      {
+        "title": "Tuyệt đối không đưa vật tư giả, vật tư kém chất lượng vào thi công công trình."
+      },
+      {
+        "title": "Cam kết chịu phạt tiến độ theo đúng thỏa thuận trong hợp đồng."
+      },
+      {
+        "title": "Giữ giá xây dựng tại thời điểm ký kết hợp đồng cho đến khi hoàn thành công trình."
+      },
+      { "title": "Không bán thầu dưới mọi hình thức" },
+      {
+        "title": "Cam kết chịu trách nhiệm pháp lý đối với công trình do công ty thỉ công theo đúng quy định của pháp luật Việt Nam."
+      },
+      {
+        "title": "Sẵn lòng đền bù mọi thiệt hại vật chất cho công trình và nhà xung quanh nếu lỗi do công ty gây ra."
+      },
+      {
+        "title": "Chế độ bảo hành chu đáo cùng đội ngũ nhân sự chuyên nghiệp và có trách nhiệm."
+      },
+      {
+        "title": "Tuân thủ nghiêm ngặt các quy định an toàn lao động và an toàn phòng chống dịch dưới sự giám sát thường xuyên của Kỹ sư xây dựng và Phòng ATLĐ."
+      },
+      { "title": "Hỗ trợ kiểm tra, thẩm định kết cấu cũ." },
+      {
+        "title": "Hỗ trợ thủ tục và hồ sơ xỉn cấp phép nhà cải tạo."
+      },
+      { "title": "Hỗ trợ bản vẽ cải tạo nhà." },
+      {
+        "title": "Hỗ trợ làm việc với ban dự án về hồ sơ pháp lý, thủ tục thi công công trình, thủ tục hoàn công với nhà dự án"
+      }
+    ]
+  }
 }

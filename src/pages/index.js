@@ -8,8 +8,7 @@ import DowTwo from "../components/sections/dale-of-week/DowTwo";
 import HeroSliderOne from "../components/sections/hero-slider/HeroSliderOne";
 import IntroductionFour from "../components/sections/introduction/IntroductionFour";
 import IntroductionTwo from "../components/sections/introduction/IntroductionTwo";
-import dowOneData from "../data/sections/dale-of-week.json";
-import heroslideData from "../data/sections/hero-slider.json";
+import companyInfo from "../data/company-info.json";
 
 export default function Home() {
   useEffect(() => {
@@ -47,15 +46,14 @@ export default function Home() {
         />
         <meta property="og:url" content={process.env.PUBLIC_URL} />
       </Head>
-      <HeroSliderOne data={heroslideData.one} />
+      <HeroSliderOne data={companyInfo.slider} />
       <IntroductionTwo />
       <Container>
         <FieldActivity />
       </Container>
       <DowTwo countdownLast={100000000} />
       <Container fluid>
-        {/* <IntroductionOne data={introductionOneData.one} /> */}
-        <DowOne data={dowOneData.one} countdownLast={100000000} />
+        <DowOne data={companyInfo.introduction.one} countdownLast={100000000} />
       </Container>
       <IntroductionFour />
       {/* <BannerOne data={bannerData.one} /> */}

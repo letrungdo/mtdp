@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 import React from "react";
-import dataA from "../../../data/sections/introduction.json";
+import dataA from "../../../data/company-info.json";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
 
@@ -17,7 +17,7 @@ const IcHeading = ({ title, line = true }) => {
 };
 
 function IntroductionFour() {
-  const data = dataA.four;
+  const data = dataA.introduction.four;
   return (
     <div className="introduction-four">
       <Container>

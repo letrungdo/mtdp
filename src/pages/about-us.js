@@ -6,8 +6,8 @@ import Container from "../components/other/Container";
 import SectionTitle from "../components/other/SectionTitle";
 import IntroductionFive from "../components/sections/introduction/IntroductionFive";
 import IntroductionSix from "../components/sections/introduction/IntroductionSix";
+import companyInfo from "../data/company-info.json";
 import data from "../data/pages/about.json";
-import introductionData from "../data/sections/dale-of-week.json";
 
 const CountItem = (item) => {
   const countUpRef = useRef(null);
@@ -76,7 +76,7 @@ function aboutUs() {
                 />
               </div>
               <p>
-                Thành lập từ năm 2021, Công ty TNHH Xây Dựng Mai Thạch Đại Phát
+                {`${companyInfo.companyName} `}
                 luôn dẫn đầu trong lĩnh vực thiết kế và thi công xây dựng các
                 công trình dân dụng tại Tp. Hồ Chí Minh và các tỉnh lân cận
                 trong khu vực miền nam. Với đội ngũ thiết kế chuyên nghiệp gồm:
@@ -98,15 +98,13 @@ function aboutUs() {
               </p>
               <p>
                 Với tiêu chí chuyên nghiệp trong công việc, tận tâm trong dịch
-                vụ và chu đáo khi hậu mãi, công ty TNHH Xây Dựng Mai Thạch Đại
-                Phát luôn là một nhà thiết kế và nhà thầu chính được tín nhiệm
-                hiện nay. Công ty TNHH Xây Dựng Mai Thạch Đại Phát đã thiết kế
-                và thi công tất cả các hạng mục của hơn 800 công trình các loại
-                như Biệt Thự, Cao ốc Văn Phòng, Siêu Thị, Khách Sạn, Nhà Phố…
-                Công ty TNHH Xây Dựng Mai Thạch Đại Phát luôn lớn mạnh trong
-                niềm tin của khách hàng để hoàn thành công trình của bạn vì
-                chúng tôi cam kết lấy chất lượng và uy tín làm mục tiêu hoạt
-                động.
+                vụ và chu đáo khi hậu mãi, luôn là một nhà thiết kế và nhà thầu
+                chính được tín nhiệm hiện nay. {companyInfo.companyName} đã
+                thiết kế và thi công tất cả các hạng mục của hơn 800 công trình
+                các loại như Biệt Thự, Cao ốc Văn Phòng, Siêu Thị, Khách Sạn,
+                Nhà Phố… Công ty luôn lớn mạnh trong niềm tin của khách hàng để
+                hoàn thành công trình của bạn vì chúng tôi cam kết lấy chất
+                lượng và uy tín làm mục tiêu hoạt động.
               </p>
             </div>
           </div>
@@ -129,10 +127,9 @@ function aboutUs() {
           </div>
         </Container>
         <div className="about-introduction">
-          <IntroductionFive data={introductionData.one} />
+          <IntroductionFive data={companyInfo.introduction.one} />
           <IntroductionSix />
         </div>
-
         {/* <Container>
           <PartnerOne />
         </Container> */}
