@@ -23,7 +23,7 @@ function MobileMenuOpener() {
         visible={visible}
         placement="left"
         width={320}
-        closeIcon={<i class="fad fa-times fa-2x" />}
+        closeIcon={<i className="fad fa-times fa-2x" />}
       >
         <MobileNavigator />
       </Drawer>

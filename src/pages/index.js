@@ -1,14 +1,22 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { useEffect } from "react";
 import LayoutOne from "../components/layout/LayoutOne";
 import Container from "../components/other/Container";
-import FieldActivity from "../components/other/FieldActivity";
-import DowOne from "../components/sections/dale-of-week/DowOne";
-import DowTwo from "../components/sections/dale-of-week/DowTwo";
-import HeroSliderOne from "../components/sections/hero-slider/HeroSliderOne";
-import IntroductionFour from "../components/sections/introduction/IntroductionFour";
-import IntroductionTwo from "../components/sections/introduction/IntroductionTwo";
 import companyInfo from "../data/company-info.json";
+
+const HeroSliderOne = dynamic(
+  import("../components/sections/hero-slider/HeroSliderOne")
+);
+const IntroductionTwo = dynamic(
+  import("../components/sections/introduction/IntroductionTwo")
+);
+const IntroductionFour = dynamic(
+  import("../components/sections/introduction/IntroductionFour")
+);
+const DowOne = dynamic(import("../components/sections/dale-of-week/DowOne"));
+const DowTwo = dynamic(import("../components/sections/dale-of-week/DowTwo"));
+const FieldActivity = dynamic(import("../components/other/FieldActivity"));
 
 export default function Home() {
   useEffect(() => {
