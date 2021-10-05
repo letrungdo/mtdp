@@ -11,6 +11,15 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.png" />
           <link
+            rel="preconnect"
+            href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
+          />
+          <link
+            rel="preload"
+            as="style"
+            href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
+          />
+          <link
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
             rel="stylesheet"
           />

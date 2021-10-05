@@ -37,13 +37,12 @@ function HeroSliderOne({ data, containerFluid }) {
                 active: index === currentSlideIndex,
               })}`}
             >
-              <div className="hero-slider-background">
-                <Image
-                  src={item.background}
-                  alt="background image"
-                  layout="fill"
-                />
-              </div>
+              <Image
+                src={item.background}
+                alt="background image"
+                layout="fill"
+                objectFit="cover"
+              />
               <Container>
                 <div className="hero-slider-content-wrapper"></div>
               </Container>
