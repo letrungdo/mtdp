@@ -54,10 +54,7 @@ function DowTwo({ countdownLast }) {
           </Col>
           <Col md={10} className="dow-two-img up-down-anim">
             <Image
-              src={
-                process.env.PUBLIC_URL +
-                "/assets/images/sections/dale-of-week/two/1.webp"
-              }
+              src={"/assets/images/sections/dale-of-week/two/1.webp"}
               width={480}
               height={300}
               objectFit="contain"

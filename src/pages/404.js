@@ -35,9 +35,7 @@ export default function error() {
             <Col xs={24} md={12}>
               <div className="error-img">
                 <Image
-                  src={
-                    process.env.PUBLIC_URL + "/assets/images/pages/404/1.png"
-                  }
+                  src={"/assets/images/pages/404/1.png"}
                   alt="404 Image"
                   width={400}
                   height={280}
