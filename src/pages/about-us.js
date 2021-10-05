@@ -129,9 +129,6 @@ function aboutUs() {
           <IntroductionFive data={companyInfo.introduction.one} />
           <IntroductionSix />
         </div>
-        {/* <Container>
-          <PartnerOne />
-        </Container> */}
       </div>
     </LayoutOne>
   );

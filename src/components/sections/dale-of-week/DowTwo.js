@@ -1,4 +1,5 @@
 import { Button, Col, Row } from "antd";
+import Image from "next/image";
 import React from "react";
 import Countdown, { zeroPad } from "react-countdown";
 import companyInfo from "../../../data/company-info.json";
@@ -9,8 +10,8 @@ function DowTwo({ countdownLast }) {
   return (
     <div className="dow-two">
       <Container>
-        <Row justify="space-between" gutter={30}>
-          <Col sm={24} lg={12}>
+        <Row justify="space-between" gutter={20}>
+          <Col sm={24} md={12}>
             <div className="dow-two-content">
               <SectionTitle
                 title="Gọi ngay để nhận tư vấn miễn phí"
@@ -51,13 +52,15 @@ function DowTwo({ countdownLast }) {
               </Button>
             </div>
           </Col>
-          <Col lg={10} className="dow-two-img up-down-anim">
-            <img
+          <Col md={10} className="dow-two-img up-down-anim">
+            <Image
               src={
                 process.env.PUBLIC_URL +
                 "/assets/images/sections/dale-of-week/two/1.webp"
               }
-              alt=""
+              width={480}
+              height={300}
+              objectFit="contain"
             />
           </Col>
         </Row>

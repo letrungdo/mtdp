@@ -6,7 +6,6 @@ import LayoutOne from "../../components/layout/LayoutOne";
 import Container from "../../components/other/Container";
 import FetchDataHandle from "../../components/other/FetchDataHandle";
 import Post from "../../components/post/Post";
-import PartnerOne from "../../components/sections/partners/PartnerOne";
 import {
   fetchPostsRequest,
   fetchRecentPostsRequest,
@@ -68,7 +67,6 @@ function blogPage() {
             </Col>
           </Row>
         </div>
-        {/* <PartnerOne /> */}
       </Container>
     </LayoutOne>
   );

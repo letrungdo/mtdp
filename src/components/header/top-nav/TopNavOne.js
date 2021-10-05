@@ -1,5 +1,4 @@
 import { Select } from "antd";
-import Link from "next/link";
 import React from "react";
 import companyInfo from "../../../data/company-info.json";
 import Container from "../../other/Container";
@@ -33,34 +32,6 @@ export default function TopNavOne({ containerFluid }) {
             <div className="top-nav-one-right__item">
               <SocialIcons />
             </div>
-            {/* <div className="top-nav-one-right__item">
-              <Select defaultValue="english" width={125} bordered={false}>
-                {flagData.map((item, index) => (
-                  <Option key={index} value={item.name}>
-                    <img
-                      style={{
-                        height: 13 / 16 + "em",
-                        width: 20 / 16 + "em",
-                        objectFit: "contain",
-                        marginTop: -3 / 16 + "em",
-                        marginRight: 5 / 16 + "em",
-                      }}
-                      src={process.env.PUBLIC_URL + item.image}
-                      alt=""
-                    />
-                    {item.name}
-                  </Option>
-                ))}
-              </Select>
-            </div> */}
-            {/* <div className="top-nav-one-right__item">
-              <Link href={process.env.PUBLIC_URL + "/auth/login"}>
-                <a>
-                  <i className="fas fa-user" />
-                  Login
-                </a>
-              </Link>
-            </div> */}
           </div>
         </div>
       </Container>

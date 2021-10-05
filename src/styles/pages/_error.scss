@@ -20,10 +20,4 @@
       padding: 0 emCal(14, 30);
     }
   }
-  &-img {
-    img {
-      @include imgCenter($type: contain);
-      // max-width: 100%;
-    }
-  }
 }

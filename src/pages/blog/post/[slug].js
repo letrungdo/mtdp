@@ -7,7 +7,6 @@ import PostDetailLayout from "../../../components/detail/post/PostDetailLayout";
 import LayoutOne from "../../../components/layout/LayoutOne";
 import Container from "../../../components/other/Container";
 import FetchDataHandle from "../../../components/other/FetchDataHandle";
-import PartnerOne from "../../../components/sections/partners/PartnerOne";
 import {
   fetchPostDetailRequest,
   fetchRecentPostsRequest,
@@ -46,7 +45,6 @@ function postDetail() {
             </Col>
           </Row>
         </div>
-        {/* <PartnerOne /> */}
       </Container>
     </LayoutOne>
   );

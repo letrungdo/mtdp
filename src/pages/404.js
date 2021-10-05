@@ -1,4 +1,5 @@
 import { Breadcrumb, Button, Col, Row } from "antd";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import LayoutOne from "../components/layout/LayoutOne";
@@ -33,11 +34,14 @@ export default function error() {
             </Col>
             <Col xs={24} md={12}>
               <div className="error-img">
-                <img
+                <Image
                   src={
                     process.env.PUBLIC_URL + "/assets/images/pages/404/1.png"
                   }
                   alt="404 Image"
+                  width={400}
+                  height={280}
+                  objectFit="contain"
                 />
               </div>
             </Col>
