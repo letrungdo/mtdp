@@ -1,9 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Container from "../../other/Container";
 import MobileMenuOpener from "../elements/MobileMenuOpener";
 import Navigator from "../elements/Navigator";
-import Image from "next/image"
 
 export default function MenuOne({ containerFluid }) {
   return (
@@ -14,7 +14,7 @@ export default function MenuOne({ containerFluid }) {
           <Link href={process.env.PUBLIC_URL + "/"}>
             <a className="menu-logo">
               <Image
-                src={process.env.PUBLIC_URL + "/assets/images/logo.svg"}
+                src={"/assets/images/logo.svg"}
                 alt="MTDP logo"
                 height={45}
                 width={134}
