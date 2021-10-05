@@ -61,99 +61,11 @@
   -webkit-box-orient: vertical;
 }
 
-@mixin spaceTrim {
-  &:first-child {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  &:last-child {
-    margin-right: 0;
-    padding-right: 0;
-  }
-}
-
 @mixin imgCenter($height: 100%, $width: 100%, $type: cover) {
   height: $height;
   width: $width;
   object-fit: $type;
 }
-
-@mixin input(
-  $pd: remCal(20),
-  $fsz: remCal(13),
-  $fw: normal,
-  $width: 100%,
-  $height: auto,
-  $lh: $height,
-  $brd: 0px,
-  $bg: #fff,
-  $color: setShadeColor(dark),
-  $ph-color: setShadeColor(medium)
-) {
-  background-color: $bg;
-  border: 1px solid setShadeColor(light);
-  height: $height;
-  width: $width;
-  transition: $transition;
-  -webkit-appearance: none;
-  padding: $pd;
-  border-radius: $brd;
-  &:focus {
-    outline: 0;
-  }
-  @include typo($color: $color, $fsz: $fsz, $fw: $fw, $lh: $lh);
-
-  @include input-pseudo-class {
-    @include typo($lh: $lh, $fsz: $fsz, $fw: $fw, $color: $ph-color);
-  }
-}
-
-@mixin prefix($property, $value) {
-  @each $prefix in $prefixes {
-    #{'-' + $prefix + '-' + $property}: $value;
-  }
-  #{$property}: $value;
-}
-
-@mixin input-pseudo-class() {
-  @each $prefix in $prefixes {
-    @if $prefix == "moz" {
-      #{"&:-" + $prefix + "-" + "input-placeholder"} {
-        @content;
-        line-height: -moz-block-height;
-      }
-      #{"&::-" + $prefix + "-" + "input-placeholder"} {
-        @content;
-        line-height: -moz-block-height;
-      }
-    } @else {
-      #{"&:-" + $prefix + "-" + "input-placeholder"} {
-        @content;
-      }
-      #{"&::-" + $prefix + "-" + "input-placeholder"} {
-        @content;
-      }
-    }
-  }
-  &:input-placeholder {
-    @content;
-  }
-  &::input-placeholder {
-    @content;
-  }
-}
-
-@mixin pseudo-class() {
-  @each $prefix in $prefixes {
-    #{"&::-" + $prefix + "-" + "placeholder"} {
-      @content;
-    }
-  }
-  &::placeholder {
-    @content;
-  }
-}
-
 @mixin mq($canvas) {
   @each $name, $bp in $breakpoint {
     @if $canvas == $name {
