@@ -1,5 +1,5 @@
 import { css } from "@emotion/css";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import dataA from "../../../data/company-info.json";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
@@ -18,8 +18,24 @@ const IcHeading = ({ title, line = true }) => {
 
 function IntroductionFour() {
   const data = dataA.introduction.four;
+  const bgRef = useRef(null);
+
+  useEffect(() => {
+    const bg = bgRef.current;
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          observer.unobserve(bg);
+          observer.disconnect();
+          entry.target.classList.add("load-bg");
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback);
+    observer.observe(bg);
+  }, []);
   return (
-    <div className="introduction-four">
+    <div ref={bgRef} className="introduction-four">
       <Container>
         <SectionTitle
           hideDecoration

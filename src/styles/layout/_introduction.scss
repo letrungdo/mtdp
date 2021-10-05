@@ -35,12 +35,14 @@
 }
 
 .introduction-four {
-  background: {
-    image: url("/assets/images/sections/introduction/four/bg.webp");
-    position: center;
-    size: cover;
-    attachment: fixed;
-    opacity: 0.5;
+  &.load-bg {
+    background: {
+      image: url("/assets/images/sections/introduction/four/bg.webp");
+      position: center;
+      size: cover;
+      attachment: fixed;
+      opacity: 0.5;
+    }
   }
   padding: emCal(16, 50) 0;
   margin-bottom: $section-spacing;
@@ -72,7 +74,7 @@
   margin-bottom: $section-spacing;
   padding: emCal(16, 20) 0;
   background: {
-    image: url("/assets/images/sections/introduction/five/bg.png");
+    image: url("/assets/images/sections/introduction/five/bg.webp");
     size: cover;
     text-align: center;
   }

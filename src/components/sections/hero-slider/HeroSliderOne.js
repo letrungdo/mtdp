@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import Container from "../../other/Container";
 import { NextArrow, PrevArrow } from "../../other/SliderArrow";
@@ -21,25 +21,6 @@ function HeroSliderOne({ data, containerFluid }) {
   const beforeChange = (oldIndex, newIndex) => {
     setNextSlideIndex(newIndex);
   };
-  useEffect(() => {
-    const currentSlide = document.querySelector(
-      `.hero-slider.-style-one .slick-slide[data-index="${currentSlideIndex}"]`
-    );
-    const animationItems = currentSlide.querySelectorAll("[data-animation]");
-    animationItems.forEach((item, index) => {
-      const animationName = item.dataset.animation;
-      const animationDelay = item.dataset.delay;
-      console.log(animationName);
-      item.classList.add("animate__animated", animationName);
-      item.style.animationDelay = animationDelay + "s";
-      item.addEventListener("animationend", function () {
-        this.classList.remove("animate__animated", animationName);
-        this.removeEventListener("animationend", function () {
-          return;
-        });
-      });
-    });
-  }, [currentSlideIndex]);
 
   return (
     <div className="hero-slider -carousel -style-one">
@@ -64,18 +45,7 @@ function HeroSliderOne({ data, containerFluid }) {
                 />
               </div>
               <Container>
-                <div className="hero-slider-content-wrapper">
-                  {/* <Row align="middle">
-                    <div className="hero-slider-content">
-                      <h5 data-animation="animate__fadeInDown">
-                        {item.subTitle}
-                      </h5>
-                      <h1 data-delay="0.2" data-animation="animate__fadeInDown">
-                        {item.title}
-                      </h1>
-                    </div>
-                  </Row> */}
-                </div>
+                <div className="hero-slider-content-wrapper"></div>
               </Container>
             </div>
           ))}

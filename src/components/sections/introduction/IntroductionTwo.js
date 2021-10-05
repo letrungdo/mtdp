@@ -23,7 +23,7 @@ function IntroductionTwo() {
             <Col md={12}>
               <div className="introduction-two-image">
                 <Image
-                  src={"/assets/images/sections/introduction/two/1.png"}
+                  src={"/assets/images/sections/introduction/two/1.webp"}
                   alt="introduction-image"
                   objectFit="contain"
                   height={400}
