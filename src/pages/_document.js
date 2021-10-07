@@ -9,7 +9,10 @@ class MyDocument extends Document {
     return (
       <Html lang="vi">
         <Head>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/favicon.ico" />
+          <meta name="theme-color" content="#000000" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/logo192.png" />
           <link
             rel="preconnect"
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
