@@ -21,6 +21,7 @@
     "less-loader": "^10.0.1",
     "mongodb": "^4.1.2",
     "next": "11.1.2",
+    "next-seo": "^4.28.1",
     "next-with-less": "^1.0.1",
     "react": "17.0.2",
     "react-countdown": "^2.3.2",

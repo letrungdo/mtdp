@@ -1,6 +1,6 @@
 import { BackTop } from "antd";
+import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
-import Head from "next/head";
 import React from "react";
 import Footer from "../footer/Footer";
 
@@ -12,12 +12,12 @@ function LayoutOne({
   headerClass,
   footerClass,
   containerFluid,
+  description,
+  ...seo
 }) {
   return (
     <>
-      <Head>
-        <title>{title} - Mai Thạch Đại Phát</title>
-      </Head>
+      <NextSeo title={title} description={description} {...seo} />
       <HeaderTwo className={headerClass} containerFluid={containerFluid} />
       {children}
       <Footer className={footerClass} />

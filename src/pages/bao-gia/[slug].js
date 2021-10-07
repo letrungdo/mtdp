@@ -1,11 +1,9 @@
 import { Breadcrumb } from "antd";
 import ErrorPage from "next/error";
-import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import LayoutOne from "../../components/layout/LayoutOne";
 import Container from "../../components/other/Container";
-// import PostBody from "../../components/post/PostBody";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -15,7 +13,21 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <LayoutOne title={post.title}>
+    <LayoutOne
+      title={post.title}
+      description={post.description}
+      openGraph={{
+        type: "website",
+        url: `${process.env.PUBLIC_URL}/bao-gia/${post.slug}`,
+        title: post.title,
+        description: post.description,
+        images: [
+          {
+            url: `${process.env.PUBLIC_URL}${post.ogImage.url}`,
+          },
+        ],
+      }}
+    >
       <Container>
         <Breadcrumb separator=">">
           <Breadcrumb.Item>
@@ -24,24 +36,6 @@ export default function Post({ post, morePosts, preview }) {
           </Breadcrumb.Item>
           <Breadcrumb.Item>Báo giá</Breadcrumb.Item>
         </Breadcrumb>
-        <Head>
-          <meta name="title" content={post.title} />
-          <meta name="description" content={post.description} />
-          <meta
-            name="image"
-            content={`${process.env.PUBLIC_URL}${post.ogImage.url}`}
-          />
-          <meta
-            property="og:image"
-            content={`${process.env.PUBLIC_URL}${post.ogImage.url}`}
-          />
-          <meta
-            property="og:url"
-            content={`${process.env.PUBLIC_URL}/bao-gia/${post.slug}`}
-          />
-          <meta property="og:title" content={post.title} />
-          <meta property="og:description" content={post.description} />
-        </Head>
         <div className={"bao-gia"}>
           <h1 className="bao-gia-title">{post.title}</h1>
           <p>{post.description}</p>
