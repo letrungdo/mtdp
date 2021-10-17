@@ -10,7 +10,7 @@ import { NextArrow, PrevArrow } from "../../other/SliderArrow";
 function HeroSliderOne({ data, containerFluid }) {
   const [currentSlideIndex, setNextSlideIndex] = useState(0);
   const settings = {
-    fade: true,
+    // fade: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -28,6 +28,7 @@ function HeroSliderOne({ data, containerFluid }) {
         <Slider
           beforeChange={beforeChange}
           className="arrow-center"
+          autoplay
           {...settings}
         >
           {data.map((item, index) => (
