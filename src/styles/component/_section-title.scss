@@ -18,7 +18,7 @@
     --green-color: #{setColor(coffee)};
   }
   h2 {
-    @include typo($fsz: emCal(16, 44), $fw: 600);
+    @include typo($fsz: emCal(16, 35), $fw: 600);
     @include mq(md) {
       font-size: emCal(14, 30);
     }

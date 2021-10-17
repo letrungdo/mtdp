@@ -24,9 +24,6 @@
   }
   &-links {
     &__group {
-      @include mq(md) {
-        text-align: center;
-      }
       h5 {
         @include typo($up: true, $fw: 600);
         margin-bottom: emCal(16, 26);

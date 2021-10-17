@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Head from "next/head";
 import React, { useEffect } from "react";
 import LayoutOne from "../components/layout/LayoutOne";
 import Container from "../components/other/Container";

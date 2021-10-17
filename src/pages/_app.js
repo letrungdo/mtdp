@@ -1,5 +1,6 @@
 import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/dist/client/router";
+import Head from "next/head";
 import { useEffect } from "react";
 import { Provider } from "react-redux";
 import { pageview } from "../lib/gtag";
@@ -23,6 +24,9 @@ const App = ({ Component, pageProps }) => {
   return (
     <Provider store={initializeStore()}>
       <DefaultSeo {...SEO} />
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Component {...pageProps} />
     </Provider>
   );

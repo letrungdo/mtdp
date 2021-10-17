@@ -3,12 +3,12 @@ body {
   padding: 0;
   margin: 0;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 17px;
   @include mq(lg) {
-    font-size: 15px;
+    font-size: 16px;
   }
   @include mq(md) {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
