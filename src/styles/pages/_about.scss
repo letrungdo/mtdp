@@ -42,6 +42,7 @@
   &-statistical {
     padding: emCal(16, 50) 1rem;
     border: 1px solid setShadeColor(light);
+    margin-top: $section-spacing;
     margin-bottom: $section-spacing;
     &__item {
       display: flex;

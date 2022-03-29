@@ -24,7 +24,7 @@ function FooterFluid() {
         <Container fluid>
           <div className="footer-bottom__wrapper">
             <p>
-              Copyright © 2021{" "}
+              Copyright © 2022{" "}
               <a href="https://letrungdo.com" target="_blank">
                 letrungdo.com
               </a>

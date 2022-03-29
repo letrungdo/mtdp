@@ -18,6 +18,12 @@
       "background": "/assets/images/hero-slider/one/bg-4.jpg"
     }
   ],
+  "aboutGallery": [
+    "/assets/images/pages/about/1.jpeg",
+    "/assets/images/pages/about/2.jpeg",
+    "/assets/images/pages/about/3.jpeg",
+    "/assets/images/pages/about/4.jpeg"
+  ],
   "introduction": {
     "one": [
       {
