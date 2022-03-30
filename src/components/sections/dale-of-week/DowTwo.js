@@ -6,6 +6,14 @@ import companyInfo from "../../../data/company-info.json";
 import Container from "../../other/Container";
 import SectionTitle from "../../other/SectionTitle";
 
+const IcHeading = ({ title, className }) => {
+  return (
+    <h3 className={className}>
+      <i className="fad fa-check-square" />
+      {title}
+    </h3>
+  );
+};
 function DowTwo({ countdownLast }) {
   return (
     <div className="dow-two">
@@ -61,6 +69,18 @@ function DowTwo({ countdownLast }) {
             />
           </Col>
         </Row>
+
+        <div className="introduction-two-content mt-20">
+          <SectionTitle title="Các gói thi công ưu đãi lớn:" hideDecoration />
+          <Row>
+            {companyInfo.introduction.five.map((d, i) => (
+              <Col md={12} key={i}>
+                <IcHeading className="sanim" title={d.title} />
+                <p className="text">{d.content}</p>
+              </Col>
+            ))}
+          </Row>
+        </div>
       </Container>
     </div>
   );

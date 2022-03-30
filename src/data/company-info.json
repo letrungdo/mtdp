@@ -19,10 +19,15 @@
     }
   ],
   "aboutGallery": [
-    "/assets/images/pages/about/1.jpeg",
-    "/assets/images/pages/about/2.jpeg",
-    "/assets/images/pages/about/3.jpeg",
-    "/assets/images/pages/about/4.jpeg"
+    "/assets/images/sections/typical-projects/1.jpeg",
+    "/assets/images/sections/typical-projects/2.jpeg",
+    "/assets/images/sections/typical-projects/3.jpeg",
+    "/assets/images/sections/typical-projects/4.jpeg",
+    "/assets/images/sections/typical-projects/5.jpeg",
+    "/assets/images/sections/typical-projects/6.jpeg",
+    "/assets/images/sections/typical-projects/7.jpg",
+    "/assets/images/sections/typical-projects/8.jpg",
+    "/assets/images/sections/typical-projects/9.jpg"
   ],
   "introduction": {
     "one": [
@@ -91,6 +96,16 @@
       { "title": "Hỗ trợ bản vẽ cải tạo nhà." },
       {
         "title": "Hỗ trợ làm việc với ban dự án về hồ sơ pháp lý, thủ tục thi công công trình, thủ tục hoàn công với nhà dự án"
+      }
+    ],
+    "five": [
+      {
+        "title": "Gói thi công xây thô bao vật tư",
+        "content": "Đơn giá từ 3,3 triệu 👉 3,8 triệu tùy diện tích\n✅ Tặng 100% phí thiết kế kiến trúc + kết cấu + điện nước\n✅ Tặng phí xin phép xây dựng\n✅ Tặng khảo sát nhà, báo giá miễn phí\n✅ Bảo hành kết cấu 10 năm"
+      },
+      {
+        "title": "Gói thi công chìa khóa trao tay bao vật tư",
+        "content": "Đơn giá từ 5,2 triệu 👉 5,7 triệu vật liệu sử dụng trung bình khá\n✅ Tặng 100% phí thiết kế kiến trúc + kết cấu + điện nước\n✅ Tặng phí xin phép xây dựng\n✅ Tặng khảo sát nhà, báo giá miễn phí\n✅ Tặng 50% phí thiết kế 3D nội, ngoại thất\n✅ Miễn phí giám sát công trình\n✅ Bảo hành hoàn thiện 12 tháng\n✅ Bảo hành kết cấu 10 năm"
       }
     ]
   },

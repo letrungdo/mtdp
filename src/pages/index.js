@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import React, { useEffect } from "react";
 import LayoutOne from "../components/layout/LayoutOne";
 import Container from "../components/other/Container";
+import TypicalProjects from "../components/sections/typical-projects";
 import companyInfo from "../data/company-info.json";
 
 const HeroSliderOne = dynamic(
@@ -36,6 +37,7 @@ export default function Home() {
       <IntroductionTwo />
       <Container>
         <FieldActivity />
+        <TypicalProjects />
       </Container>
       <DowTwo countdownLast={100000000} />
       <Container fluid>
