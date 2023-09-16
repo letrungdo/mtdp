@@ -1,5 +1,5 @@
 import { Button, Col, Row } from "antd";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import Countdown, { zeroPad } from "react-countdown";
 import companyInfo from "../../../data/company-info.json";

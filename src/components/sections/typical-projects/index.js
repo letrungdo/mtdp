@@ -4,7 +4,7 @@ import companyInfo from "../../../data/company-info.json";
 import SectionTitle from "../../other/SectionTitle";
 import { NextArrow, PrevArrow } from "../../../components/other/SliderArrow";
 import classNames from "classnames";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Container from "../../other/Container";
 
 function TypicalProjects() {

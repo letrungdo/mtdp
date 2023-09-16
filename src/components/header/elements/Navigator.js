@@ -6,7 +6,7 @@ function Navigator() {
   return (
     <ul className="navigation">
       <li className="navigation-item">
-        <Link href={navigatorData.HOME.href}>
+        <Link legacyBehavior href={navigatorData.HOME.href}>
           <a className="navigation-item__title">{navigatorData.HOME.title}</a>
         </Link>
       </li>
@@ -16,7 +16,7 @@ function Navigator() {
         </Link>
       </li> */}
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.PAGES.href}>
+        <Link legacyBehavior href={process.env.PUBLIC_URL + navigatorData.PAGES.href}>
           <a className="navigation-item__title">
             {navigatorData.PAGES.title}
             <i className="fad fa-angle-down" />
@@ -26,21 +26,21 @@ function Navigator() {
           {navigatorData.PAGES.subMenu.map((item, index) => (
             <li key={index}>
               <Link href={process.env.PUBLIC_URL + item.href}>
-                <a>{item.title}</a>
+                {item.title}
               </Link>
             </li>
           ))}
         </ul>
       </li>
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.CONTACT.href}>
+        <Link legacyBehavior href={process.env.PUBLIC_URL + navigatorData.CONTACT.href}>
           <a className="navigation-item__title">
             {navigatorData.CONTACT.title}
           </a>
         </Link>
       </li>
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
+        <Link legacyBehavior href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
           <a className="navigation-item__title">{navigatorData.ABOUT.title}</a>
         </Link>
       </li>

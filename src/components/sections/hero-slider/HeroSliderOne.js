@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import classNames from "classnames";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Slider from "react-slick";
@@ -56,15 +56,13 @@ function HeroSliderOne({ data, containerFluid }) {
               return (
                 <Col key={i} xs={8}>
                   <Link href={process.env.PUBLIC_URL + "#"}>
-                    <a>
-                      <Image
-                        src={`/assets/images/hero-slider/${i + 1}.jpg`}
-                        alt="sub item"
-                        layout="responsive"
-                        height={180}
-                        width={300}
-                      />
-                    </a>
+                    <Image
+                      src={`/assets/images/hero-slider/${i + 1}.jpg`}
+                      alt="sub item"
+                      layout="responsive"
+                      height={180}
+                      width={300}
+                    />
                   </Link>
                 </Col>
               );

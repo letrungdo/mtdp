@@ -21,7 +21,7 @@ function MobileNavigator() {
       >
         <Menu.Item key="homepage">
           <Link href={process.env.PUBLIC_URL + navigatorData.HOME.href}>
-            <a>{navigatorData.HOME.title}</a>
+            {navigatorData.HOME.title}
           </Link>
         </Menu.Item>
         {/* <SubMenu key="shop" title={navigatorData.SHOP.title}>
@@ -62,19 +62,19 @@ function MobileNavigator() {
           {navigatorData.PAGES.subMenu.map((item) => (
             <Menu.Item key={item.title}>
               <Link href={process.env.PUBLIC_URL + item.href}>
-                <a> {item.title}</a>
+                 {item.title}
               </Link>
             </Menu.Item>
           ))}
         </SubMenu>
         <Menu.Item key="contact">
           <Link href={process.env.PUBLIC_URL + navigatorData.CONTACT.href}>
-            <a>{navigatorData.CONTACT.title}</a>
+            {navigatorData.CONTACT.title}
           </Link>
         </Menu.Item>
         <Menu.Item key="about">
           <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
-            <a>{navigatorData.ABOUT.title}</a>
+            {navigatorData.ABOUT.title}
           </Link>
         </Menu.Item>
       </Menu>

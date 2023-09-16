@@ -1,5 +1,5 @@
 import { Breadcrumb, Button, Col, Row } from "antd";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 import LayoutOne from "../components/layout/LayoutOne";
@@ -27,7 +27,7 @@ export default function error() {
                 </p>
                 <Button type="primary" shape="round">
                   <Link href={process.env.PUBLIC_URL + "/"}>
-                    <a>Về trang chủ</a>
+                    Về trang chủ
                   </Link>
                 </Button>
               </div>

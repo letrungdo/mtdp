@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 import companyInfo from "../../../data/company-info.json";
@@ -7,7 +7,7 @@ import SocialIcons from "../../other/SocialIcons";
 export default function FooterInfomation() {
   return (
     <div className="footer-info">
-      <Link href={process.env.PUBLIC_URL + "/"}>
+      <Link legacyBehavior href={process.env.PUBLIC_URL + "/"}>
         <a className="footer-info__logo">
           <Image
             src={"/assets/images/logo.svg"}

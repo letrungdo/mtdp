@@ -14,21 +14,20 @@ function Post({ type, className, style, data }) {
               href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
               as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
             >
-              <a>
-                <Image
-                  width="100%"
-                  title={data.title}
-                  src={data.coverImage}
-                  alt="Post image"
-                  placeholder
-                  preview={false}
-                />
-              </a>
+              <Image
+                width="100%"
+                title={data.title}
+                src={data.coverImage}
+                alt="Post image"
+                placeholder
+                preview={false}
+              />
             </Link>
           </div>
 
           <div className="post-tiny-content">
             <Link
+              legacyBehavior
               href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
               as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
             >
@@ -48,15 +47,13 @@ function Post({ type, className, style, data }) {
                 href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
                 as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
               >
-                <a>
-                  <Image
-                    title={data.title}
-                    src={data.coverImage}
-                    alt="Post image"
-                    placeholder
-                    preview={false}
-                  />
-                </a>
+                <Image
+                  title={data.title}
+                  src={data.coverImage}
+                  alt="Post image"
+                  placeholder
+                  preview={false}
+                />
               </Link>
             </div>
           </Col>
@@ -66,6 +63,7 @@ function Post({ type, className, style, data }) {
                 {removeDash(data.category)}
               </Button>
               <Link
+                legacyBehavior
                 href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
                 as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
               >
@@ -77,6 +75,7 @@ function Post({ type, className, style, data }) {
               </div>
               <p className="post-description">{data.shortDescription}</p>
               <Link
+                legacyBehavior
                 href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
                 as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
               >

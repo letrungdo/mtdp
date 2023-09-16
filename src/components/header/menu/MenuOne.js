@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 import Container from "../../other/Container";
@@ -11,7 +11,7 @@ export default function MenuOne({ containerFluid }) {
       <Container fluid={containerFluid}>
         <div className="menu-wrapper">
           <MobileMenuOpener />
-          <Link href={process.env.PUBLIC_URL + "/"}>
+          <Link legacyBehavior href={process.env.PUBLIC_URL + "/"}>
             <a className="menu-logo">
               <Image
                 src={"/assets/images/logo.svg"}

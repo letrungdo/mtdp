@@ -15,7 +15,7 @@ function FooterQuickLinks({ colSize }) {
                 {item.items.map((link, index) => (
                   <li key={index}>
                     <Link href={link.href}>
-                      <a> {link.title}</a>
+                      {link.title}
                     </Link>{" "}
                   </li>
                 ))}

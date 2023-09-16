@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import data from "../../../data/company-info.json";
 import Container from "../../other/Container";
