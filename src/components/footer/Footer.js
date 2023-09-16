@@ -25,8 +25,8 @@ function Footer({ containerFluid, className }) {
           <div className="footer-bottom__wrapper">
             <p>
               Copyright © 2022{" "}
-              <a href="https://letrungdo.com" target="_blank">
-                letrungdo.com
+              <a href="https://xn--t-lia.vn" target="_blank">
+                TĐ.VN
               </a>
             </p>
           </div>
