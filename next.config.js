@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = withLess({
   env: {
-    PUBLIC_URL: isProd ? "https://xaydungmaithach.com" : "",
+    PUBLIC_URL: isProd ? "https://mtdp.vercel.app" : "",
   },
   lessLoaderOptions: {},
   poweredByHeader: false,

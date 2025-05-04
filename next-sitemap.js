@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://xaydungmaithach.com",
+  siteUrl: process.env.SITE_URL || "https://mtdp.vercel.app",
   generateRobotsTxt: true,
   sitemapSize: 1000,
   changefreq: "daily",

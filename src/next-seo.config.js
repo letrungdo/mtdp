@@ -1,4 +1,4 @@
-const siteUrl = "https://xaydungmaithach.com";
+const siteUrl = "https://mtdp.vercel.app";
 
 export default {
   titleTemplate: "%s | Xây dựng Mai Thạch Đại Phát",
